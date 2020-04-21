@@ -1,0 +1,1844 @@
+/*******************************
+MIDRUB GLOBAL VARIABLES
+********************************/
+/*******************************
+MIDRUB ELEMENTS STYLES
+********************************/
+/*******************************
+PLANNER APP STYLES
+********************************/
+section.planner-page {
+  padding: 30px; }
+  section.planner-page > .row > .col-xl-3 > .col-xl-12 {
+    padding: 0;
+    margin-bottom: 20px;
+    min-height: 60px;
+    border-radius: 3px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 33px 0 rgba(144, 163, 171, 0.15);
+    box-shadow: 0 0 33px 0 rgba(144, 163, 171, 0.15); }
+    section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel {
+      margin-bottom: 20px;
+      min-height: 60px; }
+      section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading {
+        min-height: 67px;
+        padding: 12px 15px;
+        padding: 15px;
+        margin-bottom: 18px;
+        background-color: #fff;
+        -webkit-box-shadow: 0 0 33px 0 rgba(144, 163, 171, 0.15);
+        box-shadow: 0 0 33px 0 rgba(144, 163, 171, 0.15); }
+        section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading .checkbox-option-select input[type="checkbox"]:not(:checked),
+        section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading .checkbox-option-select input[type="checkbox"]:checked {
+          position: absolute;
+          left: -9999px; }
+        section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading .checkbox-option-select input[type="checkbox"]:not(:checked) + label,
+        section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading .checkbox-option-select input[type="checkbox"]:checked + label {
+          position: relative;
+          padding-left: 1.95em;
+          cursor: pointer; }
+        section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading .checkbox-option-select input[type="checkbox"]:not(:checked) + label:before,
+        section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading .checkbox-option-select input[type="checkbox"]:checked + label:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 25px;
+          height: 25px;
+          border: 1px solid #dddddd;
+          background: #fff;
+          border-radius: 4px;
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); }
+        section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading .checkbox-option-select input[type="checkbox"]:not(:checked) + label:after,
+        section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading .checkbox-option-select input[type="checkbox"]:checked + label:after {
+          content: '\2713\0020';
+          position: absolute;
+          top: .15em;
+          left: .22em;
+          font-size: 1.3em;
+          line-height: 0.8;
+          color: #09ad7e;
+          transition: all .2s; }
+        section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading .checkbox-option-select input[type="checkbox"]:not(:checked) + label:after {
+          opacity: 0;
+          transform: scale(0); }
+        section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading .checkbox-option-select input[type="checkbox"]:checked + label:after {
+          opacity: 1;
+          transform: scale(1); }
+        section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading .checkbox-option-select input[type="checkbox"]:disabled:not(:checked) + label:before,
+        section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading .checkbox-option-select input[type="checkbox"]:disabled:checked + label:before {
+          box-shadow: none;
+          border-color: #bbb;
+          background-color: #ddd; }
+        section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading .checkbox-option-select input[type="checkbox"]:disabled:checked + label:after {
+          color: #999; }
+        section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading .checkbox-option-select input[type="checkbox"]:disabled + label {
+          color: #aaa; }
+        section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading .checkbox-option-select {
+          float: left;
+          padding: 0;
+          margin-top: -4px; }
+          section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading .checkbox-option-select label::before {
+            border: 1px solid #dddddd !important;
+            -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) !important;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) !important; }
+        section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading .dropdown {
+          padding: 10px 15px;
+          float: left;
+          margin-top: -11px; }
+          section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading .dropdown .btn-secondary {
+            border: 1px solid #dddddd;
+            -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+            background-color: #FFFFFF;
+            color: #343a40;
+            line-height: 23px;
+            padding: 7px 10px 6px; }
+            @media only screen and (max-width: 1512px) {
+              section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading .dropdown .btn-secondary {
+                padding: 7px 5px 6px;
+                font-size: 12px; } }
+            @media only screen and (max-width: 1199px) {
+              section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading .dropdown .btn-secondary {
+                padding: 7px 10px 6px;
+                font-size: 15px; } }
+          section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading .dropdown .dropdown-menu {
+            padding: 0; }
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading .dropdown .dropdown-menu .dropdown-item {
+              font-size: 16px;
+              padding: 10px; }
+              section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading .dropdown .dropdown-menu .dropdown-item i {
+                margin: 0;
+                margin-right: 5px;
+                color: #343a40; }
+              section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading .dropdown .dropdown-menu .dropdown-item:active, section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading .dropdown .dropdown-menu .dropdown-item:focus, section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading .dropdown .dropdown-menu .dropdown-item:hover {
+                background-color: #f7f7f7 !important;
+                color: #343a40;
+                border: 0; }
+        section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading a.pull-right {
+          border: 1px solid #e3e8ed;
+          -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+          line-height: 14px;
+          border-radius: 3px;
+          color: #343a40;
+          font-size: 18px;
+          padding: 9px;
+          margin-left: 15px;
+          margin-top: -2px; }
+          @media only screen and (max-width: 1380px) {
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading a.pull-right {
+              padding: 9px 5px;
+              margin-left: 3px; } }
+          @media only screen and (max-width: 1199px) {
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading a.pull-right {
+              padding: 9px;
+              margin-left: 15px; } }
+          section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading a.pull-right:hover {
+            border: 1px solid #e3e8ed;
+            -webkit-box-shadow: none;
+            box-shadow: none; }
+          section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-heading a.pull-right i {
+            margin-right: 0; }
+      section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body {
+        padding: 0 15px; }
+        section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body > .row:first-child {
+          margin: 0;
+          height: 60px;
+          border-bottom: 1px solid rgba(65, 106, 166, 0.1); }
+          section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body > .row:first-child .planner-posts-search .input-group-prepend {
+            width: 22px; }
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body > .row:first-child .planner-posts-search .input-group-prepend i {
+              line-height: 60px;
+              font-size: 20px;
+              color: #797876; }
+            @media only screen and (max-width: 1199px) {
+              section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body > .row:first-child .planner-posts-search .input-group-prepend i {
+                line-height: 40px; } }
+          section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body > .row:first-child .planner-posts-search .planner-search-for-posts {
+            height: 59px; }
+          section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body > .row:first-child .planner-posts-search .planner-cancel-search-for-posts {
+            background-color: transparent;
+            border: 0;
+            display: none; }
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body > .row:first-child .planner-posts-search .planner-cancel-search-for-posts .icon-close {
+              color: #797876; }
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body > .row:first-child .planner-posts-search .planner-cancel-search-for-posts:hover {
+              cursor: pointer; }
+              section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body > .row:first-child .planner-posts-search .planner-cancel-search-for-posts:hover .icon-close {
+                opacity: 0.7; }
+          section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body > .row:first-child .planner-posts-search .form-control {
+            border: 0; }
+        section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body .btn-secondary {
+          height: 40px;
+          width: auto;
+          text-align: center;
+          line-height: 23px;
+          font-size: 14px;
+          background-color: #ffffff;
+          border: 1px solid rgba(65, 106, 166, 0.1);
+          color: #343a40;
+          float: right;
+          margin-top: 10px;
+          box-shadow: inset 0 -3px 0 0 rgba(65, 106, 166, 0.1) !important;
+          border-radius: 3px; }
+          section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body .btn-secondary:hover {
+            color: #333333;
+            border: 1px solid rgba(65, 106, 166, 0.2);
+            box-shadow: inset 0 -3px 0 0 rgba(65, 106, 166, 0.2) !important; }
+          section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body .btn-secondary i {
+            margin-right: 0; }
+        section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body .dropdown-menu {
+          width: 100px;
+          min-width: 100px; }
+          section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body .dropdown-menu .dropdown-item {
+            padding: .25rem 0;
+            text-align: center; }
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body .dropdown-menu .dropdown-item:hover {
+              border-bottom: 0; }
+        section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body .no-posts-found {
+          width: 100%;
+          line-height: 35px;
+          height: 35px;
+          padding: 0 15px;
+          margin: 15px 0 15px 0;
+          background: rgba(12, 13, 14, 0.02);
+          color: #343a40; }
+        section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body ul.history-posts {
+          min-height: 822px;
+          width: 100%;
+          margin: 15px 0 0 0;
+          padding: 0; }
+          section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body ul.history-posts li {
+            margin: 0;
+            margin-bottom: 15px;
+            padding: 0;
+            border-bottom: 1px solid rgba(65, 106, 166, 0.1);
+            min-height: 64px;
+            list-style: none; }
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body ul.history-posts li.no-posts-found {
+              border-bottom: 0;
+              background-color: transparent; }
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body ul.history-posts li .checkbox-option-select input[type="checkbox"]:not(:checked),
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body ul.history-posts li .checkbox-option-select input[type="checkbox"]:checked {
+              position: absolute;
+              left: -9999px; }
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body ul.history-posts li .checkbox-option-select input[type="checkbox"]:not(:checked) + label,
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body ul.history-posts li .checkbox-option-select input[type="checkbox"]:checked + label {
+              position: relative;
+              padding-left: 1.95em;
+              cursor: pointer; }
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body ul.history-posts li .checkbox-option-select input[type="checkbox"]:not(:checked) + label:before,
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body ul.history-posts li .checkbox-option-select input[type="checkbox"]:checked + label:before {
+              content: '';
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 25px;
+              height: 25px;
+              border: 1px solid #dddddd;
+              background: #fff;
+              border-radius: 4px;
+              box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); }
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body ul.history-posts li .checkbox-option-select input[type="checkbox"]:not(:checked) + label:after,
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body ul.history-posts li .checkbox-option-select input[type="checkbox"]:checked + label:after {
+              content: '\2713\0020';
+              position: absolute;
+              top: .15em;
+              left: .22em;
+              font-size: 1.3em;
+              line-height: 0.8;
+              color: #09ad7e;
+              transition: all .2s; }
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body ul.history-posts li .checkbox-option-select input[type="checkbox"]:not(:checked) + label:after {
+              opacity: 0;
+              transform: scale(0); }
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body ul.history-posts li .checkbox-option-select input[type="checkbox"]:checked + label:after {
+              opacity: 1;
+              transform: scale(1); }
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body ul.history-posts li .checkbox-option-select input[type="checkbox"]:disabled:not(:checked) + label:before,
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body ul.history-posts li .checkbox-option-select input[type="checkbox"]:disabled:checked + label:before {
+              box-shadow: none;
+              border-color: #bbb;
+              background-color: #ddd; }
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body ul.history-posts li .checkbox-option-select input[type="checkbox"]:disabled:checked + label:after {
+              color: #999; }
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body ul.history-posts li .checkbox-option-select input[type="checkbox"]:disabled + label {
+              color: #aaa; }
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body ul.history-posts li .checkbox-option-select {
+              float: left;
+              margin-right: 10px;
+              padding-bottom: 20px; }
+              section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body ul.history-posts li .checkbox-option-select label:before {
+                box-shadow: none; }
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body ul.history-posts li h4 {
+              font-size: 14px;
+              padding: 0;
+              margin: 0;
+              color: #343a40;
+              word-break: break-all; }
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body ul.history-posts li h3 {
+              font-size: 16px;
+              line-height: 35px;
+              padding: 0;
+              margin: 0; }
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body ul.history-posts li p {
+              color: #c0cddc;
+              font-size: 12px; }
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body ul.history-posts li .btn-outline-info {
+              margin-top: 3px;
+              border: 1px solid #ebedf2;
+              color: #343a40;
+              float: right; }
+              section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body ul.history-posts li .btn-outline-info:hover {
+                background-color: #FFFFFF;
+                border: 1px solid #2e5f9b;
+                color: #212529; }
+            section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body ul.history-posts li i.fa-history {
+              margin-left: -28px;
+              line-height: 27px;
+              background-color: #FFFFFF;
+              font-size: 18px;
+              border: 3px solid #ffffff;
+              color: #2e5f9b;
+              position: absolute; }
+              section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-body ul.history-posts li i.fa-history.icon-user {
+                color: #01c0c8; }
+      section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-footer {
+        height: 67px; }
+        section.planner-page > .row > .col-xl-3 > .col-xl-12 .panel .panel-footer .pagination {
+          float: right; }
+  section.planner-page > .row > .col-xl-9 > .col-xl-12 {
+    padding: 0 15px 15px;
+    margin-bottom: 20px;
+    min-height: 60px;
+    border-radius: 3px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 33px 0 rgba(144, 163, 171, 0.15);
+    box-shadow: 0 0 33px 0 rgba(144, 163, 171, 0.15); }
+    section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-toolbar {
+      padding: 15px;
+      width: calc(100% + 30px);
+      margin-left: -15px;
+      margin-bottom: 30px;
+      background-color: #fff;
+      -webkit-box-shadow: 0 0 33px 0 rgba(144, 163, 171, 0.15);
+      box-shadow: 0 0 33px 0 rgba(144, 163, 171, 0.15); }
+    section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-header-toolbar h2 {
+      font-size: 25px; }
+    section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-header-toolbar .fc-button {
+      border: 1px solid #e3e8ed;
+      -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+      background: #FFFFFF;
+      outline: none; }
+      section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-header-toolbar .fc-button.fc-state-active, section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-header-toolbar .fc-button.fc-state-disabled, section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-header-toolbar .fc-button:hover {
+        background: #e3e8ed; }
+    section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-unthemed .fc-content,
+    section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-unthemed .fc-divider,
+    section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-unthemed .fc-list-heading td,
+    section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-unthemed .fc-list-view,
+    section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-unthemed .fc-popover,
+    section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-unthemed .fc-row,
+    section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-unthemed tbody,
+    section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-unthemed td,
+    section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-unthemed th,
+    section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-unthemed thead {
+      border-color: #e3e8ed; }
+    section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-past {
+      background-color: rgba(52, 108, 176, 0.01); }
+    section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-view-container .fc-day-header,
+    section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-view-container .fc-day-header {
+      font-weight: normal; }
+    section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-view-container .fc-event {
+      background-color: #FFFFFF;
+      color: #343a40;
+      padding: 10px;
+      margin: 10px 10px;
+      border: 1px solid #e3e8ed;
+      cursor: pointer;
+      -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.05);
+      box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.05); }
+      section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-view-container .fc-event .fc-time {
+        display: none; }
+      section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-view-container .fc-event .fc-content {
+        white-space: inherit; }
+      section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-view-container .fc-event img {
+        max-width: 100%; }
+      section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-view-container .fc-event p {
+        margin-bottom: 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap; }
+        section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-view-container .fc-event p i {
+          font-size: 15px;
+          margin-right: 10px;
+          float: left; }
+        section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-view-container .fc-event p span {
+          color: #c0cddc;
+          font-size: 12px; }
+    section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-view-container .fc-day-grid-event .fc-time {
+      font-weight: normal; }
+    section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-month-view img {
+      display: none; }
+    section.planner-page > .row > .col-xl-9 > .col-xl-12 .fc-unthemed td.fc-today {
+      background-color: #fafaff !important; }
+
+/*******************************
+MODAL APP STYLES
+********************************/
+#planner-bulk-schedule {
+  padding: 0 15px; }
+  #planner-bulk-schedule .modal-header {
+    padding: 0;
+    border: 0; }
+    #planner-bulk-schedule .modal-header nav {
+      width: 100%;
+      margin-bottom: 15px;
+      -webkit-box-shadow: 0 0 33px 0 rgba(144, 163, 171, 0.15);
+      box-shadow: 0 0 33px 0 rgba(144, 163, 171, 0.15);
+      border-bottom: 1px solid rgba(65, 106, 166, 0.1); }
+      #planner-bulk-schedule .modal-header nav .nav-tabs {
+        border-bottom: 0; }
+        #planner-bulk-schedule .modal-header nav .nav-tabs .nav-link {
+          color: #999999;
+          font-size: 16px;
+          padding: 15px 25px; }
+        #planner-bulk-schedule .modal-header nav .nav-tabs .nav-link.active,
+        #planner-bulk-schedule .modal-header nav .nav-tabs .nav-link:hover {
+          border: 1px solid transparent;
+          border-bottom: 1px solid #2e5f9b;
+          color: #2e5f9b; }
+      #planner-bulk-schedule .modal-header nav button {
+        position: absolute;
+        right: 15px;
+        top: 15px; }
+  #planner-bulk-schedule .modal-body {
+    min-height: 700px;
+    padding: 0; }
+    #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) {
+      border-bottom: 1px solid rgba(65, 106, 166, 0.1);
+      padding-bottom: 40px; }
+      #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1).planner-bulk-schedule-accounts-manager {
+        display: none; }
+      #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) nav {
+        margin: 15px;
+        border-radius: 2px;
+        border: 1px solid rgba(65, 106, 166, 0.1);
+        width: calc(100% - 30px); }
+        #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) nav .nav-tabs {
+          border-bottom: 0; }
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) nav .nav-tabs .nav-link {
+            color: #999999;
+            font-size: 16px;
+            padding: 15px 25px; }
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) nav .nav-tabs .nav-link.active,
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) nav .nav-tabs .nav-link:hover {
+            border: 1px solid transparent;
+            border-bottom: 1px solid #2e5f9b;
+            color: #2e5f9b; }
+        #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) nav button {
+          position: absolute;
+          right: 15px;
+          top: 15px; }
+      #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager,
+      #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager {
+        padding: 15px 15px 0; }
+        #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-3,
+        #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-3 {
+          border-right: 1px solid rgba(65, 106, 166, 0.1); }
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-3 .tabs-left,
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-3 .tabs-left {
+            margin: 0;
+            padding: 0;
+            border: 0; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-3 .tabs-left li,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-3 .tabs-left li {
+              width: 100%;
+              float: none;
+              min-height: 60px;
+              margin-right: -1px;
+              margin-bottom: 15px;
+              padding: 5px 10px;
+              border: 1px solid rgba(65, 106, 166, 0.1); }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-3 .tabs-left li a,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-3 .tabs-left li a {
+                width: 100%;
+                display: block;
+                border-radius: 4px 0 0 4px;
+                margin-right: 0;
+                min-height: 45px;
+                opacity: 0.7; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-3 .tabs-left li a div,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-3 .tabs-left li a div {
+                  font-size: 16px;
+                  color: #343a40; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-3 .tabs-left li a span,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-3 .tabs-left li a span {
+                  font-size: 10px;
+                  color: #ffffff;
+                  padding: 1px 5px 0;
+                  border-radius: 3px;
+                  display: table; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-3 .tabs-left li a:hover, #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-3 .tabs-left li a.network-selected,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-3 .tabs-left li a:hover,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-3 .tabs-left li a.network-selected {
+                  border-bottom: 0; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-3 .tabs-left li.network-selected,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-3 .tabs-left li.network-selected {
+                opacity: 1;
+                box-shadow: 0 0 10px 0 rgba(136, 152, 170, 0.15);
+                -webkit-box-shadow: 0 0 10px 0 rgba(136, 152, 170, 0.15); }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-3 .tabs-left li.network-selected a,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-3 .tabs-left li.network-selected a {
+                  opacity: 1; }
+        #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 > .row:first-child,
+        #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 > .row:first-child {
+          border-bottom: 1px solid rgba(65, 106, 166, 0.1);
+          margin: 0 -15px 15px 0; }
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 > .row:first-child .accounts-manager-search,
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 > .row:first-child .accounts-manager-search {
+            height: 60px;
+            margin-bottom: 0; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 > .row:first-child .accounts-manager-search .input-group-prepend,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 > .row:first-child .accounts-manager-search .input-group-prepend {
+              width: 22px; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 > .row:first-child .accounts-manager-search .input-group-prepend i,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 > .row:first-child .accounts-manager-search .input-group-prepend i {
+                line-height: 60px;
+                font-size: 20px;
+                color: #797876; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 > .row:first-child .accounts-manager-search .form-control,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 > .row:first-child .accounts-manager-search .form-control {
+              border: 0; }
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 > .row:first-child .cancel-accounts-manager-search,
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 > .row:first-child .cancel-accounts-manager-search {
+            background-color: transparent;
+            border: 0;
+            float: right;
+            margin-right: 10px;
+            display: none; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 > .row:first-child .cancel-accounts-manager-search .icon-close,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 > .row:first-child .cancel-accounts-manager-search .icon-close {
+              color: #797876;
+              margin-top: 20px;
+              display: block; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 > .row:first-child .cancel-accounts-manager-search:hover,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 > .row:first-child .cancel-accounts-manager-search:hover {
+              cursor: pointer; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 > .row:first-child .cancel-accounts-manager-search:hover .icon-close,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 > .row:first-child .cancel-accounts-manager-search:hover .icon-close {
+                opacity: 0.7; }
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 > .row:first-child .manage-accounts-new-account,
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 > .row:first-child .manage-accounts-new-account {
+            height: 40px;
+            width: auto;
+            text-align: center;
+            line-height: 20px;
+            font-size: 14px;
+            background-color: #ffffff;
+            border: 1px solid rgba(65, 106, 166, 0.1);
+            color: #343a40;
+            float: right;
+            margin-top: 10px;
+            box-shadow: inset 0 -3px 0 0 rgba(65, 106, 166, 0.1) !important;
+            border-radius: 3px;
+            padding: 0 10px; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 > .row:first-child .manage-accounts-new-account:hover,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 > .row:first-child .manage-accounts-new-account:hover {
+              color: #333333;
+              border: 1px solid rgba(65, 106, 166, 0.2);
+              box-shadow: inset 0 -3px 0 0 rgba(65, 106, 166, 0.2) !important; }
+        #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts,
+        #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts {
+          padding-right: 0; }
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts ul,
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts ul {
+            margin: 0;
+            padding: 0; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts ul li,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts ul li {
+              list-style: none;
+              display: inline-block;
+              border-radius: 3px;
+              margin-right: 15px;
+              margin-bottom: 15px; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts ul li a,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts ul li a {
+                display: block;
+                padding: 5px 10px;
+                font-size: 15px;
+                color: #343a40;
+                -webkit-box-shadow: 0 0 0 1px rgba(61, 70, 79, 0.05), 0 1px 3px 0 rgba(61, 70, 79, 0.15);
+                box-shadow: 0 0 0 1px rgba(61, 70, 79, 0.05), 0 1px 3px 0 rgba(61, 70, 79, 0.15); }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts ul li a i,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts ul li a i {
+                  margin-right: 0;
+                  margin-left: 3px; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts ul li a:hover,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts ul li a:hover {
+                  border-bottom: 0;
+                  margin-bottom: 0; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts ul li:hover,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts ul li:hover {
+                background-color: #ea6759; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts ul li:hover a,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts ul li:hover a {
+                  color: #FFFFFF; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts ul li.no-accounts-found,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts ul li.no-accounts-found {
+                width: 100%;
+                background-color: #FFFFFF;
+                border-top: 5px solid rgba(65, 106, 166, 0.1);
+                padding: 5px 15px;
+                border-radius: 0 3px 3px 0;
+                -webkit-box-shadow: 0 0 0 1px rgba(61, 70, 79, 0.05), 0 1px 3px 0 rgba(61, 70, 79, 0.15);
+                box-shadow: 0 0 0 1px rgba(61, 70, 79, 0.05), 0 1px 3px 0 rgba(61, 70, 79, 0.15); }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts ul li.no-accounts-found a,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts ul li.no-accounts-found a {
+                  color: #343a40; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts ul.accounts-manager-expired-accounts-list,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts ul.accounts-manager-expired-accounts-list {
+              width: 100%;
+              min-height: 50px;
+              margin-bottom: 10px; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts ul.accounts-manager-expired-accounts-list li,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts ul.accounts-manager-expired-accounts-list li {
+                background-color: #ea6759; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts ul.accounts-manager-expired-accounts-list li:hover,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts ul.accounts-manager-expired-accounts-list li:hover {
+                  background-color: #2e5f9b; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts ul.accounts-manager-expired-accounts-list li a,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 .col-xl-12.manage-accounts-all-accounts ul.accounts-manager-expired-accounts-list li a {
+                  color: #FFFFFF; }
+        #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 .manage-accounts-hidden-content,
+        #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 .manage-accounts-hidden-content {
+          margin-bottom: 20px;
+          padding-right: 0;
+          display: none; }
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 .manage-accounts-hidden-content .form-control,
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 .manage-accounts-hidden-content .form-control {
+            border-radius: 3px; }
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 .manage-accounts-hidden-content .btn,
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 .manage-accounts-hidden-content .btn {
+            background-color: #6086bf;
+            border-color: #6086bf;
+            color: #ffffff;
+            margin-left: 10px; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 .manage-accounts-hidden-content .btn:hover,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 .manage-accounts-hidden-content .btn:hover {
+              opacity: 0.7; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-5 .manage-accounts-hidden-content .btn i,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-5 .manage-accounts-hidden-content .btn i {
+              margin-right: 0; }
+        #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-4 > .col-xl-12,
+        #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-4 > .col-xl-12 {
+          min-height: 200px;
+          padding: 5px 15px 30px;
+          -webkit-box-shadow: 0 0 33px 0 rgba(144, 163, 171, 0.15);
+          box-shadow: 0 0 33px 0 rgba(144, 163, 171, 0.15); }
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-4 > .col-xl-12 ul,
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-4 > .col-xl-12 ul {
+            border-left: 3px solid #e3ecf9;
+            margin: 15px 15px 0;
+            padding: 0; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-4 > .col-xl-12 ul li,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-4 > .col-xl-12 ul li {
+              margin: 0;
+              padding: 15px 0 15px 15px;
+              list-style: none; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-4 > .col-xl-12 ul li h4,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-4 > .col-xl-12 ul li h4 {
+                font-size: 15px;
+                padding: 0;
+                margin: 0;
+                color: #343a40; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-4 > .col-xl-12 ul li i.icon-info,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-4 > .col-xl-12 ul li i.icon-info {
+                margin-left: -28px;
+                line-height: 27px;
+                background-color: #FFFFFF;
+                font-size: 18px;
+                border: 3px solid #ffffff;
+                color: #2e5f9b;
+                position: absolute; }
+        #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child,
+        #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child {
+          border-bottom: 1px solid #e0e6e8; }
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child .accounts-manager-search-accounts,
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child .accounts-manager-search-accounts {
+            height: 60px; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child .accounts-manager-search-accounts .input-group-prepend,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child .accounts-manager-search-accounts .input-group-prepend {
+              width: 22px; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child .accounts-manager-search-accounts .input-group-prepend i,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child .accounts-manager-search-accounts .input-group-prepend i {
+                line-height: 60px;
+                font-size: 20px;
+                color: #797876; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child .accounts-manager-search-accounts .cancel-accounts-manager-search,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child .accounts-manager-search-accounts .cancel-accounts-manager-search {
+              background-color: transparent;
+              border: 0;
+              display: none; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child .accounts-manager-search-accounts .cancel-accounts-manager-search .icon-close,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child .accounts-manager-search-accounts .cancel-accounts-manager-search .icon-close {
+                color: #797876; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child .accounts-manager-search-accounts .cancel-accounts-manager-search:hover,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child .accounts-manager-search-accounts .cancel-accounts-manager-search:hover {
+                cursor: pointer; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child .accounts-manager-search-accounts .cancel-accounts-manager-search:hover .icon-close,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child .accounts-manager-search-accounts .cancel-accounts-manager-search:hover .icon-close {
+                  opacity: 0.7; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child .accounts-manager-search-accounts .form-control,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child .accounts-manager-search-accounts .form-control {
+              border: 0; }
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child.accounts-manager-groups-create-group,
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child.accounts-manager-groups-create-group {
+            -webkit-box-shadow: 0 0 33px 0 rgba(144, 163, 171, 0.15);
+            box-shadow: 0 0 33px 0 rgba(144, 163, 171, 0.15);
+            height: 60px;
+            min-height: 60px;
+            margin-bottom: 15px;
+            border-bottom: 0; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child.accounts-manager-groups-create-group .input-group-prepend,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child.accounts-manager-groups-create-group .input-group-prepend {
+              width: 22px; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child.accounts-manager-groups-create-group .input-group-prepend i,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child.accounts-manager-groups-create-group .input-group-prepend i {
+                line-height: 60px;
+                font-size: 20px;
+                color: #797876; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child.accounts-manager-groups-create-group .form-control,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child.accounts-manager-groups-create-group .form-control {
+              border: 0; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child.accounts-manager-groups-create-group .cancel-accounts-manager-search,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child.accounts-manager-groups-create-group .cancel-accounts-manager-search {
+              background-color: transparent;
+              border: 0;
+              float: right;
+              margin-right: 10px;
+              display: none; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child.accounts-manager-groups-create-group .cancel-accounts-manager-search .icon-close,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child.accounts-manager-groups-create-group .cancel-accounts-manager-search .icon-close {
+                color: #797876;
+                margin-top: 20px;
+                display: block; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child.accounts-manager-groups-create-group .cancel-accounts-manager-search:hover,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child.accounts-manager-groups-create-group .cancel-accounts-manager-search:hover {
+                cursor: pointer; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child.accounts-manager-groups-create-group .cancel-accounts-manager-search:hover .icon-close,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child.accounts-manager-groups-create-group .cancel-accounts-manager-search:hover .icon-close {
+                  opacity: 0.7; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child.accounts-manager-groups-create-group .accounts-manager-groups-save-group,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child.accounts-manager-groups-create-group .accounts-manager-groups-save-group {
+              height: 40px;
+              width: auto;
+              text-align: center;
+              line-height: 20px;
+              font-size: 14px;
+              background-color: #ffffff;
+              border: 1px solid rgba(65, 106, 166, 0.1);
+              color: #343a40;
+              float: right;
+              margin-top: 10px;
+              box-shadow: inset 0 -3px 0 0 rgba(65, 106, 166, 0.1) !important;
+              border-radius: 3px;
+              padding: 0 10px; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child.accounts-manager-groups-create-group .accounts-manager-groups-save-group:hover,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child.accounts-manager-groups-create-group .accounts-manager-groups-save-group:hover {
+                color: #333333;
+                border: 1px solid rgba(65, 106, 166, 0.2);
+                box-shadow: inset 0 -3px 0 0 rgba(65, 106, 166, 0.2) !important; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child.accounts-manager-groups-create-group .accounts-manager-groups-save-group i,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 > .row:first-child.accounts-manager-groups-create-group .accounts-manager-groups-save-group i {
+                margin-right: 0; }
+        #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row .col-xl-12.manage-accounts-groups-all-accounts,
+        #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row .col-xl-12.manage-accounts-groups-all-accounts {
+          padding-top: 15px; }
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row .col-xl-12.manage-accounts-groups-all-accounts ul,
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row .col-xl-12.manage-accounts-groups-all-accounts ul {
+            margin: 0;
+            padding: 0; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row .col-xl-12.manage-accounts-groups-all-accounts ul li,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row .col-xl-12.manage-accounts-groups-all-accounts ul li {
+              list-style: none;
+              display: inline-block;
+              border-radius: 3px;
+              margin-right: 15px;
+              margin-bottom: 15px; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row .col-xl-12.manage-accounts-groups-all-accounts ul li a,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row .col-xl-12.manage-accounts-groups-all-accounts ul li a {
+                display: block;
+                padding: 5px 10px;
+                font-size: 15px;
+                color: #343a40;
+                -webkit-box-shadow: 0 0 0 1px rgba(61, 70, 79, 0.05), 0 1px 3px 0 rgba(61, 70, 79, 0.15);
+                box-shadow: 0 0 0 1px rgba(61, 70, 79, 0.05), 0 1px 3px 0 rgba(61, 70, 79, 0.15); }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row .col-xl-12.manage-accounts-groups-all-accounts ul li a i,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row .col-xl-12.manage-accounts-groups-all-accounts ul li a i {
+                  margin-right: 0;
+                  margin-left: 3px; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row .col-xl-12.manage-accounts-groups-all-accounts ul li a:hover,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row .col-xl-12.manage-accounts-groups-all-accounts ul li a:hover {
+                  border-bottom: 0;
+                  margin-bottom: 0; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row .col-xl-12.manage-accounts-groups-all-accounts ul li:hover,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row .col-xl-12.manage-accounts-groups-all-accounts ul li:hover {
+                background-color: #ea6759; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row .col-xl-12.manage-accounts-groups-all-accounts ul li:hover a,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row .col-xl-12.manage-accounts-groups-all-accounts ul li:hover a {
+                  color: #FFFFFF; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row .col-xl-12.manage-accounts-groups-all-accounts ul li.no-accounts-found,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row .col-xl-12.manage-accounts-groups-all-accounts ul li.no-accounts-found {
+                width: 100%;
+                background-color: #FFFFFF;
+                border-top: 5px solid rgba(65, 106, 166, 0.1);
+                padding: 5px 15px;
+                border-radius: 0 3px 3px 0;
+                -webkit-box-shadow: 0 0 0 1px rgba(61, 70, 79, 0.05), 0 1px 3px 0 rgba(61, 70, 79, 0.15);
+                box-shadow: 0 0 0 1px rgba(61, 70, 79, 0.05), 0 1px 3px 0 rgba(61, 70, 79, 0.15); }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row .col-xl-12.manage-accounts-groups-all-accounts ul li.no-accounts-found a,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row .col-xl-12.manage-accounts-groups-all-accounts ul li.no-accounts-found a {
+                  color: #343a40; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row .col-xl-12.manage-accounts-groups-all-accounts ul.accounts-manager-groups-active-accounts li.select-account-in-group,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row .col-xl-12.manage-accounts-groups-all-accounts ul.accounts-manager-groups-active-accounts li.select-account-in-group {
+              background-color: #F7F7F7;
+              pointer-events: none; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row .col-xl-12.manage-accounts-groups-all-accounts ul.accounts-manager-groups-active-accounts li a:hover,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row .col-xl-12.manage-accounts-groups-all-accounts ul.accounts-manager-groups-active-accounts li a:hover {
+              background-color: #00a28a;
+              color: #FFFFFF;
+              border: 0; }
+        #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group,
+        #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group {
+          -webkit-box-shadow: 0 0 33px 0 rgba(144, 163, 171, 0.15);
+          box-shadow: 0 0 33px 0 rgba(144, 163, 171, 0.15);
+          min-height: 60px;
+          margin-bottom: 15px; }
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group > .col-xl-12,
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group > .col-xl-12 {
+            display: none; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group > .col-xl-12:first-child,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group > .col-xl-12:first-child {
+              display: block; }
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group .btn-group,
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group .btn-group {
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group .btn-group .btn-secondary,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group .btn-group .btn-secondary {
+              width: 100%;
+              height: 40px;
+              text-align: left;
+              background-color: #FFFFFF;
+              color: #343a40;
+              border: 0;
+              padding: 0; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group .btn-group .btn-secondary::after,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group .btn-group .btn-secondary::after {
+                float: right;
+                margin-top: 10px; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group .btn-group .dropdown-menu,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group .btn-group .dropdown-menu {
+              width: calc(100% + 30px);
+              margin-left: -15px;
+              top: 60px !important;
+              -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+              box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+              border: 0;
+              padding: 0;
+              transform: inherit !important; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group .btn-group .dropdown-menu button,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group .btn-group .dropdown-menu button {
+                height: 50px; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group .btn-group .dropdown-menu button.active, #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group .btn-group .dropdown-menu button:active, #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group .btn-group .dropdown-menu button:focus, #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group .btn-group .dropdown-menu button:hover,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group .btn-group .dropdown-menu button.active,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group .btn-group .dropdown-menu button:active,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group .btn-group .dropdown-menu button:focus,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group .btn-group .dropdown-menu button:hover {
+                  color: #343a40;
+                  -webkit-box-shadow: none !important;
+                  box-shadow: none !important;
+                  outline: none !important;
+                  background-color: #f7f7f7 !important; }
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group ul,
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group ul {
+            margin: 0;
+            padding: 15px;
+            border-top: 1px solid rgba(65, 106, 166, 0.1);
+            border-bottom: 1px solid rgba(65, 106, 166, 0.1);
+            min-height: 60px; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group ul li,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group ul li {
+              list-style: none;
+              display: inline-block;
+              border-radius: 3px;
+              margin-right: 15px;
+              margin-bottom: 15px; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group ul li a,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group ul li a {
+                display: block;
+                padding: 5px 10px;
+                font-size: 15px;
+                color: #343a40;
+                -webkit-box-shadow: 0 0 0 1px rgba(61, 70, 79, 0.05), 0 1px 3px 0 rgba(61, 70, 79, 0.15);
+                box-shadow: 0 0 0 1px rgba(61, 70, 79, 0.05), 0 1px 3px 0 rgba(61, 70, 79, 0.15); }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group ul li a i,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group ul li a i {
+                  margin-right: 0;
+                  margin-left: 3px; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group ul li a:hover,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group ul li a:hover {
+                  border-bottom: 0;
+                  margin-bottom: 0; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group ul li:hover,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group ul li:hover {
+                background-color: #ea6759; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group ul li:hover a,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group ul li:hover a {
+                  color: #FFFFFF; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group ul li.no-accounts-found,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group ul li.no-accounts-found {
+                width: 100%;
+                background-color: #FFFFFF;
+                border-top: 5px solid rgba(65, 106, 166, 0.1);
+                padding: 5px 15px;
+                border-radius: 0 3px 3px 0;
+                -webkit-box-shadow: 0 0 0 1px rgba(61, 70, 79, 0.05), 0 1px 3px 0 rgba(61, 70, 79, 0.15);
+                box-shadow: 0 0 0 1px rgba(61, 70, 79, 0.05), 0 1px 3px 0 rgba(61, 70, 79, 0.15); }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group ul li.no-accounts-found a,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group ul li.no-accounts-found a {
+                  color: #343a40; }
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group .btn-danger,
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group .btn-danger {
+            background-color: #ea6759;
+            border-color: #ea6759;
+            color: #FFFFFF;
+            font-size: 14px;
+            margin: 15px 0; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group .btn-danger:hover,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6 .col-xl-12 .row.accounts-manager-groups-select-group .btn-danger:hover {
+              opacity: 0.8; }
+        #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6:first-child,
+        #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6:first-child {
+          margin-bottom: 15px; }
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-accounts-manager > .row .col-xl-9 .col-xl-6:first-child > .col-xl-12,
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(1) #nav-groups-manager > .row .col-xl-9 .col-xl-6:first-child > .col-xl-12 {
+            -webkit-box-shadow: 0 0 33px 0 rgba(144, 163, 171, 0.15);
+            box-shadow: 0 0 33px 0 rgba(144, 163, 171, 0.15); }
+    #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) {
+      margin: 0; }
+      #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list {
+        padding-top: 15px;
+        min-height: 665px;
+        border-right: 1px solid rgba(65, 106, 166, 0.1); }
+        #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts {
+          width: 100%;
+          margin: 0;
+          padding: 0; }
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li {
+            margin-bottom: 15px;
+            padding: 10px;
+            min-height: 56px;
+            list-style: none;
+            border-radius: 2px;
+            background-color: #FFFFFF;
+            border: 1px solid rgba(65, 106, 166, 0.1); }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) {
+              display: none; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form ::placeholder {
+                color: #999999; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form :-ms-input-placeholder {
+                color: #999999; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form ::-ms-input-placeholder {
+                color: #999999; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .form-group {
+                border: 1px solid #e1e8f0;
+                box-shadow: 0 2px 2px rgba(0, 0, 0, 0.02);
+                border-radius: 4px; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .form-group ::-webkit-scrollbar {
+                  width: 10px;
+                  background-color: #F5F5F5;
+                  margin-right: -10px; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .form-group ::-webkit-scrollbar-thumb {
+                  background-color: #DDDDDD;
+                  border: 0;
+                  margin-right: -10px; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .form-group ::-webkit-scrollbar-track {
+                  -webkit-box-shadow: none;
+                  background-color: #fdfdfd;
+                  margin-right: -10px; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .form-group:last-child {
+                  border: 0;
+                  border-radius: 0;
+                  box-shadow: none;
+                  margin-bottom: 0; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form input[type="text"] {
+                border: 0; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form textarea {
+                border: 0;
+                resize: none;
+                min-height: 100px; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .emojionearea .emojionearea-editor:empty:before {
+                color: #999999; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .emojionearea .emojionearea-editor {
+                padding: 12px; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .emojionearea,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .emojionearea.form-control {
+                border: 0 !important;
+                box-shadow: none !important;
+                padding: 0;
+                font-size: 16px; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .emojionearea:active, #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .emojionearea:focus,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .emojionearea.form-control:active,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .emojionearea.form-control:focus {
+                  border: 0 !important;
+                  outline: none !important; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .btn {
+                border: 1px solid #dddddd;
+                -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+                background-color: #FFFFFF;
+                color: #343a40;
+                line-height: 23px;
+                padding: 7px 10px 6px;
+                margin-left: 15px;
+                font-size: 14px; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .btn.btn-primary {
+                  background-color: #6086bf;
+                  border-color: #6086bf;
+                  color: #FFFFFF; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .btn.btn-danger {
+                  background-color: #ea6759;
+                  border-color: #ea6759;
+                  color: #FFFFFF; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .btn:hover {
+                  opacity: 0.7; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .planner-bulk-schedule-history-posts-edit-media-head {
+                background-color: #f8fafb;
+                font-family: "Open Sans", sans-serif;
+                padding: 10px; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .planner-bulk-schedule-history-posts-edit-media-head h3 {
+                  font-size: 16px;
+                  margin-bottom: 0;
+                  line-height: 24px; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .planner-bulk-schedule-history-posts-edit-media-area {
+                min-height: 80px;
+                padding: 10px 10px 0;
+                border-radius: 3px; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .planner-bulk-schedule-history-posts-edit-media-area div {
+                  width: 60px;
+                  height: 60px;
+                  max-width: 100px;
+                  margin-right: 10px;
+                  margin-bottom: 10px;
+                  display: inline-block;
+                  vertical-align: top; }
+                  #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .planner-bulk-schedule-history-posts-edit-media-area div img {
+                    height: 60px;
+                    width: 60px;
+                    max-width: 60px;
+                    border-radius: 3px; }
+                  #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .planner-bulk-schedule-history-posts-edit-media-area div a.planner-delete-media {
+                    position: absolute;
+                    margin-left: 52px;
+                    margin-top: -9px;
+                    height: 20px;
+                    width: 20px;
+                    background-color: #fff;
+                    border-radius: 50%; }
+                    #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .planner-bulk-schedule-history-posts-edit-media-area div a.planner-delete-media i {
+                      margin-right: 0; }
+                    #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .planner-bulk-schedule-history-posts-edit-media-area div a.planner-delete-media:hover {
+                      border-bottom: 0; }
+                  #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .planner-bulk-schedule-history-posts-edit-media-area div.single-media-select a:hover {
+                    border-bottom: 0; }
+                  #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .planner-bulk-schedule-history-posts-edit-media-area div.upload-new-media {
+                    font-size: 32px;
+                    border-radius: 3px;
+                    border: 1px dashed #343a40;
+                    color: #343a40;
+                    text-align: center;
+                    -webkit-transition: opacity 1s ease-in-out;
+                    -moz-transition: opacity 1s ease-in-out;
+                    -ms-transition: opacity 1s ease-in-out;
+                    -o-transition: opacity 1s ease-in-out;
+                    transition: opacity 1s ease-in-out; }
+                    #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .planner-bulk-schedule-history-posts-edit-media-area div.upload-new-media:hover {
+                      opacity: 0.7; }
+                    #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .planner-bulk-schedule-history-posts-edit-media-area div.upload-new-media a {
+                      display: block;
+                      width: 60px;
+                      height: 60px;
+                      color: #343a40; }
+                      #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .planner-bulk-schedule-history-posts-edit-media-area div.upload-new-media a:hover {
+                        opacity: 0.7;
+                        border-bottom: 0; }
+                      #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .row:nth-child(2) form .planner-bulk-schedule-history-posts-edit-media-area div.upload-new-media a i {
+                        line-height: 60px;
+                        margin-right: 0; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li.planner-bulk-schedule-history-posts-edit .row:nth-child(1) {
+              display: none; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li.planner-bulk-schedule-history-posts-edit .row:nth-child(2) {
+              display: block;
+              padding: 5px 20px; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li h4 {
+              font-size: 14px;
+              color: #343a40; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li p {
+              font-size: 12px;
+              color: #343a40; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .btn-default {
+              border: 1px solid #e3e8ed;
+              -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) !important;
+              box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) !important;
+              line-height: 14px;
+              border-radius: 3px;
+              color: #343a40;
+              font-size: 14px;
+              padding: 5px 7px;
+              background-color: #FFFFFF;
+              text-align: center;
+              margin-left: 5px; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .btn-default i.icon-trash,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .btn-default i.icon-pencil {
+                margin-right: 0; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .planner-bulk-schedule-history-posts li .btn-default:hover {
+                opacity: 0.7; }
+        #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list .pagination {
+          margin: 0 0 15px;
+          float: right; }
+        #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list:last-child {
+          padding-right: 15px;
+          padding-left: 0; }
+        @media screen and (max-width: 991px) {
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.planner-bulk-schedule-posts-list {
+            padding-left: 15px !important;
+            padding-right: 15px !important; } }
+      #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination {
+        padding-bottom: 15px !important; }
+        #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination > div > .row:first-child {
+          border-bottom: 1px solid rgba(65, 106, 166, 0.1); }
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination > div > .row:first-child .planner-bulk-schedule-accounts-search {
+            height: 60px; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination > div > .row:first-child .planner-bulk-schedule-accounts-search .input-group-prepend {
+              width: 22px; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination > div > .row:first-child .planner-bulk-schedule-accounts-search .input-group-prepend i {
+                line-height: 60px;
+                font-size: 20px;
+                color: #797876; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination > div > .row:first-child .planner-bulk-schedule-accounts-search .planner-bulk-schedule-search-for-accounts {
+              height: 59px; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination > div > .row:first-child .planner-bulk-schedule-accounts-search .planner-bulk-schedule-cancel-search-for-accounts,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination > div > .row:first-child .planner-bulk-schedule-accounts-search .planner-bulk-schedule-cancel-search-for-groups {
+              background-color: transparent;
+              border: 0;
+              display: none; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination > div > .row:first-child .planner-bulk-schedule-accounts-search .planner-bulk-schedule-cancel-search-for-accounts .icon-close,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination > div > .row:first-child .planner-bulk-schedule-accounts-search .planner-bulk-schedule-cancel-search-for-groups .icon-close {
+                color: #797876; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination > div > .row:first-child .planner-bulk-schedule-accounts-search .planner-bulk-schedule-cancel-search-for-accounts:hover,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination > div > .row:first-child .planner-bulk-schedule-accounts-search .planner-bulk-schedule-cancel-search-for-groups:hover {
+                cursor: pointer; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination > div > .row:first-child .planner-bulk-schedule-accounts-search .planner-bulk-schedule-cancel-search-for-accounts:hover .icon-close,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination > div > .row:first-child .planner-bulk-schedule-accounts-search .planner-bulk-schedule-cancel-search-for-groups:hover .icon-close {
+                  opacity: 0.7; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination > div > .row:first-child .planner-bulk-schedule-accounts-search .form-control {
+              border: 0; }
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination > div > .row:first-child .planner-bulk-schedule-manage-members {
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            line-height: 20px;
+            font-size: 20px;
+            background-color: #ffffff;
+            border: 1px solid rgba(65, 106, 166, 0.1);
+            color: #343a40;
+            float: right;
+            margin-top: 10px;
+            box-shadow: inset 0 -3px 0 0 rgba(65, 106, 166, 0.1) !important;
+            border-radius: 3px; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination > div > .row:first-child .planner-bulk-schedule-manage-members.accounts-manager-open {
+              background-color: rgba(65, 106, 166, 0.1); }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination > div > .row:first-child .planner-bulk-schedule-manage-members:hover {
+              color: #333333;
+              border: 1px solid rgba(65, 106, 166, 0.2);
+              box-shadow: inset 0 -3px 0 0 rgba(65, 106, 166, 0.2) !important; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination > div > .row:first-child .planner-bulk-schedule-manage-members i {
+              margin-right: 0; }
+        #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-accounts-list,
+        #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-groups-list {
+          padding-top: 15px;
+          min-height: 665px; }
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-accounts-list ul,
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-groups-list ul {
+            margin: 0;
+            padding: 0; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-accounts-list ul li,
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-groups-list ul li {
+              background-color: #ffffff;
+              width: 100%;
+              height: 50px;
+              list-style: none;
+              margin-bottom: 15px;
+              border: 1px solid rgba(65, 106, 166, 0.1); }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-accounts-list ul li:hover,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-groups-list ul li:hover {
+                border: 1px solid #01c0c8; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-accounts-list ul li a,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-groups-list ul li a {
+                display: block;
+                width: 100%;
+                padding: 0 15px;
+                height: 50px;
+                line-height: 48px;
+                color: #646f79;
+                fill: #848f99; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-accounts-list ul li a i,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-groups-list ul li a i {
+                  font-size: 26px;
+                  float: left;
+                  margin-top: 10px;
+                  margin-right: 10px; }
+                  #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-accounts-list ul li a i.icon-check,
+                  #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-groups-list ul li a i.icon-check {
+                    color: #01c0c8;
+                    font-size: 25px;
+                    border-radius: 50%;
+                    display: none;
+                    float: right;
+                    margin-top: 10px;
+                    transform: scale(0.5);
+                    opacity: 0.5; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-accounts-list ul li a:hover,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-groups-list ul li a:hover {
+                  text-decoration: none;
+                  color: #212529;
+                  border-bottom: 0; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-accounts-list ul li.account-selected, #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-accounts-list ul li.group-selected,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-groups-list ul li.account-selected,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-groups-list ul li.group-selected {
+                border: 1px solid #01c0c8; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-accounts-list ul li.account-selected a i.icon-check, #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-accounts-list ul li.group-selected a i.icon-check,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-groups-list ul li.account-selected a i.icon-check,
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-groups-list ul li.group-selected a i.icon-check {
+                  display: block;
+                  -webkit-animation: loadingOpacity 0.3s;
+                  animation: loadingOpacity 0.3s;
+                  -webkit-animation-fill-mode: forwards;
+                  animation-fill-mode: forwards; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-accounts-list ul li.no-accounts-found, #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-accounts-list ul li.no-groups-found,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-groups-list ul li.no-accounts-found,
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-groups-list ul li.no-groups-found {
+                background-color: transparent;
+                border: 0; }
+        #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-colapse-selected-accounts {
+          width: 100%;
+          background-color: #FFFFFF;
+          border-top: 5px solid rgba(65, 106, 166, 0.1);
+          padding: 10px 0 12px;
+          border-radius: 0 3px 3px 0;
+          margin-left: 0px;
+          -webkit-box-shadow: 0 0 0 1px rgba(61, 70, 79, 0.05), 0 1px 3px 0 rgba(61, 70, 79, 0.15);
+          box-shadow: 0 0 0 1px rgba(61, 70, 79, 0.05), 0 1px 3px 0 rgba(61, 70, 79, 0.15); }
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-colapse-selected-accounts p {
+            line-height: 30px;
+            text-transform: lowercase; }
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-colapse-selected-accounts .btn-primary {
+            border: 1px solid #dddddd;
+            -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+            background-color: #FFFFFF;
+            color: #343a40;
+            line-height: 25px;
+            padding: 5px 10px 2px;
+            float: right; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-colapse-selected-accounts .btn-primary i {
+              margin-right: 0; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-colapse-selected-accounts .btn-primary:hover {
+              opacity: 0.7; }
+          #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-colapse-selected-accounts .card {
+            border: 0;
+            padding: 15px 0 0;
+            border-top: 1px solid rgba(65, 106, 166, 0.1);
+            margin: 15px 0; }
+            #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-colapse-selected-accounts .card ul {
+              margin: 0;
+              padding: 0; }
+              #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-colapse-selected-accounts .card ul li {
+                list-style: none;
+                margin-right: 15px;
+                margin-bottom: 15px;
+                float: left; }
+                #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-colapse-selected-accounts .card ul li a:hover {
+                  color: #ea6759;
+                  border: 0; }
+                  #planner-bulk-schedule .modal-body > div > div > .row:nth-child(2) .col-xl-6.post-destination .planner-bulk-schedule-colapse-selected-accounts .card ul li a:hover i {
+                    color: #ea6759 !important; }
+    #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions {
+      min-height: 200px;
+      border-top: 1px solid rgba(65, 106, 166, 0.1); }
+      #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planification-title {
+        -webkit-box-shadow: 0 0 33px 0 rgba(144, 163, 171, 0.15);
+        box-shadow: 0 0 33px 0 rgba(144, 163, 171, 0.15);
+        height: 60px;
+        min-height: 60px;
+        margin-bottom: 15px;
+        border-bottom: 0;
+        margin: 15px;
+        line-height: 57px; }
+        #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planification-title input[type="text"] {
+          width: 100%;
+          border: 0;
+          padding: 0;
+          line-height: 60px; }
+      #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .dropdown {
+        padding: 10px 0;
+        margin-top: -10px; }
+        #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .dropdown .btn-secondary {
+          border: 1px solid #dddddd;
+          -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+          background-color: #FFFFFF;
+          color: #343a40;
+          line-height: 23px;
+          padding: 7px 10px 6px; }
+        #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .dropdown .dropdown-menu {
+          padding: 0; }
+          #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .dropdown .dropdown-menu .dropdown-item {
+            font-size: 16px;
+            padding: 0 15px;
+            line-height: 44px; }
+            #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .dropdown .dropdown-menu .dropdown-item i {
+              margin: 0;
+              margin-right: 5px;
+              color: #343a40; }
+            #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .dropdown .dropdown-menu .dropdown-item:active, #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .dropdown .dropdown-menu .dropdown-item:focus, #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .dropdown .dropdown-menu .dropdown-item:hover {
+              background-color: #f7f7f7 !important;
+              color: #343a40;
+              border: 0; }
+      #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications {
+        -webkit-box-shadow: 0 0 33px 0 rgba(144, 163, 171, 0.15);
+        box-shadow: 0 0 33px 0 rgba(144, 163, 171, 0.15);
+        height: 60px;
+        min-height: 60px;
+        margin-bottom: 15px;
+        border-bottom: 0;
+        margin: 15px;
+        line-height: 57px; }
+        #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications i.icon-directions,
+        #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications i.icon-tag {
+          line-height: 57px; }
+        #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications .planner-bulk-schedule-new-planification {
+          height: 40px;
+          width: auto;
+          text-align: center;
+          line-height: 20px;
+          font-size: 14px;
+          background-color: #ffffff;
+          border: 1px solid rgba(65, 106, 166, 0.1);
+          color: #343a40;
+          float: right;
+          margin-top: 10px;
+          box-shadow: inset 0 -3px 0 0 rgba(65, 106, 166, 0.1) !important;
+          border-radius: 3px;
+          padding: 0 10px; }
+          #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications .planner-bulk-schedule-new-planification:hover {
+            color: #333333;
+            border: 1px solid rgba(65, 106, 166, 0.2);
+            box-shadow: inset 0 -3px 0 0 rgba(65, 106, 166, 0.2) !important; }
+          #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications .planner-bulk-schedule-new-planification i {
+            margin-right: 0; }
+      #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list {
+        padding: 0 15px 15px;
+        margin: 0; }
+        #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel {
+          width: 100%;
+          margin-bottom: 15px;
+          -webkit-box-shadow: 0 0 33px 0 rgba(144, 163, 171, 0.15);
+          box-shadow: 0 0 33px 0 rgba(144, 163, 171, 0.15); }
+          #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-heading {
+            min-height: 50px;
+            overflow: hidden; }
+            #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-heading .row {
+              padding: 10px 0;
+              margin: 0; }
+              @media only screen and (max-width: 1199px) {
+                #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-heading .row .col-xl-4 {
+                  text-align: center; }
+                  #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-heading .row .col-xl-4 .btn-default {
+                    margin-bottom: 10px; } }
+              #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-heading .row .btn-default,
+              #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-heading .row .planner-bulk-schedule-planifications-list-time {
+                width: 100%;
+                border: 1px solid #e1e8f0;
+                box-shadow: 0 2px 2px rgba(0, 0, 0, 0.02);
+                -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.02);
+                border-radius: 4px;
+                background-color: #FFFFFF;
+                color: #343a40;
+                line-height: 23px;
+                padding: 4px 10px 3px;
+                border-radius: 3px; }
+                @media only screen and (max-width: 1199px) {
+                  #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-heading .row .btn-default,
+                  #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-heading .row .planner-bulk-schedule-planifications-list-time {
+                    text-align: center; } }
+                #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-heading .row .btn-default select,
+                #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-heading .row .planner-bulk-schedule-planifications-list-time select {
+                  cursor: pointer;
+                  border: 0;
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                  text-indent: 1px;
+                  text-overflow: ''; }
+                  #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-heading .row .btn-default select *,
+                  #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-heading .row .planner-bulk-schedule-planifications-list-time select * {
+                    height: 35px;
+                    line-height: 35px; }
+                    #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-heading .row .btn-default select *:focus, #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-heading .row .btn-default select *:hover,
+                    #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-heading .row .planner-bulk-schedule-planifications-list-time select *:focus,
+                    #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-heading .row .planner-bulk-schedule-planifications-list-time select *:hover {
+                      border: 0 !important;
+                      outline: none !important; }
+                #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-heading .row .btn-default:hover,
+                #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-heading .row .planner-bulk-schedule-planifications-list-time:hover {
+                  opacity: 0.7; }
+              #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-heading .row .col-xl-4 .btn-default {
+                width: 36px;
+                display: inline-block;
+                font-size: 12px;
+                padding: 4px 3px 3px;
+                text-align: center;
+                margin-right: 4px; }
+                #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-heading .row .col-xl-4 .btn-default.planner-bulk-schedule-planifications-list-day-active {
+                  background-color: #dbe5ea; }
+              #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-heading .row .fa-arrows-alt-h {
+                position: absolute;
+                margin-left: -24px;
+                margin-top: 8px;
+                color: #b1b1b1; }
+              @media only screen and (max-width: 1199px) {
+                #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-heading .row .fa-arrows-alt-h {
+                  display: none; } }
+          #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-body {
+            min-height: 50px;
+            padding: 10px; }
+            #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-body hr {
+              margin-top: -10px;
+              margin-bottom: 10px;
+              border-top: 1px solid rgba(65, 106, 166, 0.1); }
+            #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-body .btn {
+              width: 100%; }
+              #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-body .btn:after {
+                display: none; }
+            #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-body .btn-secondary {
+              background-color: #f8fafb;
+              border-color: #f8fafb;
+              color: rgba(0, 0, 0, 0.6);
+              line-height: 23px;
+              padding: 4px 10px 3px; }
+              #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-body .btn-secondary:hover {
+                opacity: 0.7; }
+            #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-body .btn-delete-planification {
+              color: rgba(0, 0, 0, 0.6);
+              line-height: 23px;
+              padding: 4px 10px 3px;
+              background-color: #f8fafb;
+              border-color: #f8fafb; }
+              #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-body .btn-delete-planification:hover {
+                background-color: #ea6759;
+                border-color: #ea6759;
+                color: #FFFFFF; }
+              #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-body .btn-delete-planification i {
+                margin-top: 1px; }
+            #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-body .dropdown-menu {
+              width: 100%;
+              padding: 0; }
+              #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-body .dropdown-menu .dropdown-item {
+                font-size: 16px;
+                padding: 10px; }
+                #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-body .dropdown-menu .dropdown-item i {
+                  margin: 0;
+                  margin-right: 5px;
+                  color: #343a40; }
+                #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-body .dropdown-menu .dropdown-item:active, #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-body .dropdown-menu .dropdown-item:focus, #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel .panel-body .dropdown-menu .dropdown-item:hover {
+                  background-color: #f7f7f7 !important;
+                  color: #343a40;
+                  border: 0; }
+          #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel.active-rule {
+            background-color: #e4e9ef; }
+            #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel.active-rule .panel-heading {
+              pointer-events: none; }
+            #planner-bulk-schedule .modal-body > div > div > form > .row .planner-bulk-schedule-post-actions .planner-bulk-schedule-planifications-list .panel.active-rule .panel-body .dropdown {
+              pointer-events: none; }
+    #planner-bulk-schedule .modal-body #nav-planner-bulk-schedule-planifications ul {
+      width: calc(100% - 30px);
+      margin: 15px;
+      padding: 0;
+      min-height: 700px; }
+      #planner-bulk-schedule .modal-body #nav-planner-bulk-schedule-planifications ul li {
+        margin-bottom: 15px;
+        padding: 10px;
+        min-height: 52px;
+        list-style: none;
+        border-radius: 2px;
+        background-color: #FFFFFF;
+        border: 1px solid rgba(65, 106, 166, 0.1); }
+        #planner-bulk-schedule .modal-body #nav-planner-bulk-schedule-planifications ul li h4 {
+          font-size: 14px;
+          color: #343a40;
+          margin-bottom: 0;
+          line-height: 28px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap; }
+        #planner-bulk-schedule .modal-body #nav-planner-bulk-schedule-planifications ul li span {
+          float: left;
+          line-height: 28px; }
+        #planner-bulk-schedule .modal-body #nav-planner-bulk-schedule-planifications ul li .btn {
+          border: 1px solid #e3e8ed;
+          -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) !important;
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) !important;
+          line-height: 14px;
+          border-radius: 3px;
+          color: #343a40;
+          font-size: 14px;
+          padding: 5px 7px;
+          background-color: #FFFFFF;
+          text-align: center;
+          margin-left: 5px; }
+          #planner-bulk-schedule .modal-body #nav-planner-bulk-schedule-planifications ul li .btn i {
+            margin-right: 0; }
+          #planner-bulk-schedule .modal-body #nav-planner-bulk-schedule-planifications ul li .btn:hover {
+            opacity: 0.7; }
+    #planner-bulk-schedule .modal-body #nav-planner-bulk-schedule-planifications .planification_details_manage {
+      margin: 15px;
+      height: 70px;
+      border-radius: 2px;
+      padding: 15px;
+      border: 1px solid #e1e8f0;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.02); }
+      #planner-bulk-schedule .modal-body #nav-planner-bulk-schedule-planifications .planification_details_manage .btn {
+        float: left; }
+    #planner-bulk-schedule .modal-body #nav-planner-bulk-schedule-planifications .no_planifications_found {
+      margin: 15px;
+      border-radius: 2px;
+      padding: 15px;
+      border: 1px solid #e1e8f0;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.02); }
+    #planner-bulk-schedule .modal-body #nav-planner-bulk-schedule-faq {
+      padding: 15px 15px; }
+      #planner-bulk-schedule .modal-body #nav-planner-bulk-schedule-faq > .row {
+        border-bottom: 0; }
+        #planner-bulk-schedule .modal-body #nav-planner-bulk-schedule-faq > .row > .col-xl-3 .panel {
+          background-color: #FFFFFF;
+          box-shadow: 0 1px 1px 0 #f0f1f4;
+          border: 1px solid #eee;
+          padding: 15px 0;
+          margin-bottom: 20px; }
+          #planner-bulk-schedule .modal-body #nav-planner-bulk-schedule-faq > .row > .col-xl-3 .panel .panel-heading h3 {
+            color: #7C858C;
+            letter-spacing: 0.8px;
+            padding-bottom: 7px;
+            padding: 0 15px;
+            text-transform: uppercase;
+            font-size: 14px;
+            line-height: 45px; }
+          #planner-bulk-schedule .modal-body #nav-planner-bulk-schedule-faq > .row > .col-xl-3 .panel .panel-body nav {
+            margin: 15px 0;
+            border: 0;
+            width: 100%; }
+          #planner-bulk-schedule .modal-body #nav-planner-bulk-schedule-faq > .row > .col-xl-3 .panel .panel-body .nav-tabs {
+            border-bottom: 0; }
+            #planner-bulk-schedule .modal-body #nav-planner-bulk-schedule-faq > .row > .col-xl-3 .panel .panel-body .nav-tabs .nav-item {
+              border: 0;
+              background-color: transparent;
+              color: #707070;
+              padding: 0 15px;
+              line-height: 45px;
+              border-radius: 0;
+              border-right: 0;
+              font-size: 15px;
+              border-bottom: 1px solid rgba(238, 238, 238, 0.5);
+              border-left: 3px solid #FFFFFF;
+              width: 100%; }
+              #planner-bulk-schedule .modal-body #nav-planner-bulk-schedule-faq > .row > .col-xl-3 .panel .panel-body .nav-tabs .nav-item i {
+                float: right;
+                line-height: 45px; }
+              #planner-bulk-schedule .modal-body #nav-planner-bulk-schedule-faq > .row > .col-xl-3 .panel .panel-body .nav-tabs .nav-item.active, #planner-bulk-schedule .modal-body #nav-planner-bulk-schedule-faq > .row > .col-xl-3 .panel .panel-body .nav-tabs .nav-item:hover {
+                background-color: #f8f9fa;
+                border-color: transparent;
+                color: #707070;
+                border-left: 3px solid #346cb0;
+                border-bottom: 1px solid #f8f9fa;
+                border-right: 0; }
+              #planner-bulk-schedule .modal-body #nav-planner-bulk-schedule-faq > .row > .col-xl-3 .panel .panel-body .nav-tabs .nav-item:last-child {
+                border-bottom: 0; }
+        #planner-bulk-schedule .modal-body #nav-planner-bulk-schedule-faq > .row > .col-xl-9 h1 {
+          font-size: 22px;
+          font-weight: 300;
+          color: #2e5f9b; }
+        #planner-bulk-schedule .modal-body #nav-planner-bulk-schedule-faq > .row > .col-xl-9 p {
+          line-height: 1.6;
+          margin: 0;
+          padding: .5em 0;
+          font-weight: 400;
+          color: #707070; }
+        #planner-bulk-schedule .modal-body #nav-planner-bulk-schedule-faq > .row > .col-xl-9 ul {
+          color: #707070;
+          margin: 1em 0;
+          padding-left: 2em;
+          font-weight: 400; }
+          #planner-bulk-schedule .modal-body #nav-planner-bulk-schedule-faq > .row > .col-xl-9 ul li {
+            margin: .8em 0; }
+  #planner-bulk-schedule .modal-footer .btn {
+    border: 1px solid #dddddd;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    background-color: #FFFFFF;
+    color: #343a40;
+    line-height: 23px;
+    padding: 7px 10px 6px;
+    margin-left: 15px;
+    font-size: 14px; }
+    #planner-bulk-schedule .modal-footer .btn.btn-success {
+      background-color: #6086bf;
+      border-color: #6086bf;
+      color: #FFFFFF; }
+    #planner-bulk-schedule .modal-footer .btn:hover {
+      opacity: 0.7; }
+
+#planner-new-post .planner-new-post-form-input {
+  width: 100%;
+  min-height: 30px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #e1e8f0;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.02);
+  border-radius: 4px; }
+  #planner-new-post .planner-new-post-form-input ::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+    margin-right: -10px; }
+  #planner-new-post .planner-new-post-form-input ::-webkit-scrollbar-thumb {
+    background-color: #DDDDDD;
+    border: 0;
+    margin-right: -10px; }
+  #planner-new-post .planner-new-post-form-input ::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+    background-color: #fdfdfd;
+    margin-right: -10px; }
+  #planner-new-post .planner-new-post-form-input ::placeholder {
+    color: #999999; }
+  #planner-new-post .planner-new-post-form-input :-ms-input-placeholder {
+    color: #999999; }
+  #planner-new-post .planner-new-post-form-input ::-ms-input-placeholder {
+    color: #999999; }
+  #planner-new-post .planner-new-post-form-input input[type="text"] {
+    width: 100%;
+    height: 30px;
+    border: 0 !important; }
+  #planner-new-post .planner-new-post-form-input textarea {
+    width: 100%;
+    min-height: 250px;
+    resize: none;
+    border: 0 !important; }
+  #planner-new-post .planner-new-post-form-input .emojionearea .emojionearea-editor:empty:before {
+    color: #999999; }
+  #planner-new-post .planner-new-post-form-input .emojionearea .emojionearea-editor {
+    padding: 0; }
+  #planner-new-post .planner-new-post-form-input .emojionearea,
+  #planner-new-post .planner-new-post-form-input .emojionearea.form-control {
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 0;
+    font-size: 16px; }
+    #planner-new-post .planner-new-post-form-input .emojionearea:active, #planner-new-post .planner-new-post-form-input .emojionearea:focus,
+    #planner-new-post .planner-new-post-form-input .emojionearea.form-control:active,
+    #planner-new-post .planner-new-post-form-input .emojionearea.form-control:focus {
+      border: 0 !important;
+      outline: none !important; }
+  #planner-new-post .planner-new-post-form-input .post-preview-medias {
+    min-height: 350px;
+    background-color: #f7f7f7; }
+    #planner-new-post .planner-new-post-form-input .post-preview-medias > div {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      height: 340px;
+      margin-bottom: 10px;
+      position: relative; }
+      #planner-new-post .planner-new-post-form-input .post-preview-medias > div img,
+      #planner-new-post .planner-new-post-form-input .post-preview-medias > div video {
+        width: 100%;
+        height: 340px; }
+      #planner-new-post .planner-new-post-form-input .post-preview-medias > div img {
+        object-fit: cover; }
+      #planner-new-post .planner-new-post-form-input .post-preview-medias > div a {
+        position: absolute;
+        top: 15px;
+        right: 5px;
+        font-size: 20px; }
+        #planner-new-post .planner-new-post-form-input .post-preview-medias > div a:hover {
+          border: 0;
+          opacity: 0.8; }
+        #planner-new-post .planner-new-post-form-input .post-preview-medias > div a i {
+          background-color: #343a40;
+          color: #FFFFFF;
+          border-radius: 50%; }
+#planner-new-post .planner-bulk-schedule-history-posts-edit-media-head {
+  background-color: #f8fafb;
+  font-family: "Open Sans", sans-serif;
+  padding: 10px; }
+  #planner-new-post .planner-bulk-schedule-history-posts-edit-media-head h3 {
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 24px; }
+#planner-new-post .planner-bulk-schedule-history-posts-edit-media-area {
+  min-height: 80px;
+  padding: 10px 10px 0;
+  border: 1px solid #e1e8f0;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.02);
+  border-radius: 4px;
+  margin-top: 15px; }
+  #planner-new-post .planner-bulk-schedule-history-posts-edit-media-area div {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    display: inline-block;
+    vertical-align: top; }
+    #planner-new-post .planner-bulk-schedule-history-posts-edit-media-area div img {
+      height: 60px;
+      width: 60px;
+      max-width: 60px;
+      border-radius: 3px; }
+    #planner-new-post .planner-bulk-schedule-history-posts-edit-media-area div a.planner-delete-media {
+      position: absolute;
+      margin-left: 52px;
+      margin-top: -9px;
+      height: 20px;
+      width: 20px;
+      background-color: #fff;
+      border-radius: 50%; }
+      #planner-new-post .planner-bulk-schedule-history-posts-edit-media-area div a.planner-delete-media i {
+        margin-right: 0; }
+      #planner-new-post .planner-bulk-schedule-history-posts-edit-media-area div a.planner-delete-media:hover {
+        border-bottom: 0; }
+    #planner-new-post .planner-bulk-schedule-history-posts-edit-media-area div.single-media-select a:hover {
+      border-bottom: 0; }
+    #planner-new-post .planner-bulk-schedule-history-posts-edit-media-area div.upload-new-media, #planner-new-post .planner-bulk-schedule-history-posts-edit-media-area div.load-new-media {
+      font-size: 32px;
+      border-radius: 3px;
+      border: 1px dashed #343a40;
+      color: #343a40;
+      text-align: center;
+      -webkit-transition: opacity 1s ease-in-out;
+      -moz-transition: opacity 1s ease-in-out;
+      -ms-transition: opacity 1s ease-in-out;
+      -o-transition: opacity 1s ease-in-out;
+      transition: opacity 1s ease-in-out; }
+      #planner-new-post .planner-bulk-schedule-history-posts-edit-media-area div.upload-new-media:hover, #planner-new-post .planner-bulk-schedule-history-posts-edit-media-area div.load-new-media:hover {
+        opacity: 0.7; }
+      #planner-new-post .planner-bulk-schedule-history-posts-edit-media-area div.upload-new-media a, #planner-new-post .planner-bulk-schedule-history-posts-edit-media-area div.load-new-media a {
+        display: block;
+        width: 60px;
+        height: 60px;
+        color: #343a40; }
+        #planner-new-post .planner-bulk-schedule-history-posts-edit-media-area div.upload-new-media a:hover, #planner-new-post .planner-bulk-schedule-history-posts-edit-media-area div.load-new-media a:hover {
+          opacity: 0.7;
+          border-bottom: 0; }
+        #planner-new-post .planner-bulk-schedule-history-posts-edit-media-area div.upload-new-media a i, #planner-new-post .planner-bulk-schedule-history-posts-edit-media-area div.load-new-media a i {
+          line-height: 60px;
+          margin-right: 0; }
+#planner-new-post .planner-new-post-save {
+  height: 36px;
+  background-color: #6086bf;
+  border-color: #6086bf;
+  color: #FFFFFF;
+  font-size: 14px;
+  float: right; }
+  #planner-new-post .planner-new-post-save i {
+    font-size: 16px;
+    margin-right: 5px;
+    float: left;
+    margin-top: 1px; }
+  #planner-new-post .planner-new-post-save:hover {
+    opacity: 0.7; }
+
+#planner-csv-import .planner-import-posts-from-csv {
+  margin-top: 50px;
+  padding: 7px 10px 6px;
+  border: 1px solid #dddddd;
+  line-height: 23px;
+  color: #343a40;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
+#planner-csv-import a {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #343a40; }
+  #planner-csv-import a:hover {
+    border-bottom: 1px solid #343a40; }
+
+#planner-add-posts-to-plannification .modal-body {
+  min-height: 30px; }
+  #planner-add-posts-to-plannification .modal-body .planner-new-post-form-input {
+    width: 100%;
+    min-height: 30px;
+    padding: 10px;
+    border: 1px solid #e1e8f0;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.02);
+    border-radius: 4px; }
+    #planner-add-posts-to-plannification .modal-body .planner-new-post-form-input ::-webkit-scrollbar {
+      width: 10px;
+      background-color: #F5F5F5;
+      margin-right: -10px; }
+    #planner-add-posts-to-plannification .modal-body .planner-new-post-form-input ::-webkit-scrollbar-thumb {
+      background-color: #DDDDDD;
+      border: 0;
+      margin-right: -10px; }
+    #planner-add-posts-to-plannification .modal-body .planner-new-post-form-input ::-webkit-scrollbar-track {
+      -webkit-box-shadow: none;
+      background-color: #fdfdfd;
+      margin-right: -10px; }
+    #planner-add-posts-to-plannification .modal-body .planner-new-post-form-input ::placeholder {
+      color: #999999; }
+    #planner-add-posts-to-plannification .modal-body .planner-new-post-form-input :-ms-input-placeholder {
+      color: #999999; }
+    #planner-add-posts-to-plannification .modal-body .planner-new-post-form-input ::-ms-input-placeholder {
+      color: #999999; }
+    #planner-add-posts-to-plannification .modal-body .planner-new-post-form-input select {
+      width: 100%;
+      height: 30px;
+      border: 0 !important; }
+#planner-add-posts-to-plannification .modal-footer .planner-new-post-save {
+  height: 36px;
+  background-color: #6086bf;
+  border-color: #6086bf;
+  color: #FFFFFF;
+  font-size: 14px;
+  float: right; }
+  #planner-add-posts-to-plannification .modal-footer .planner-new-post-save i {
+    font-size: 16px;
+    margin-right: 5px;
+    float: left;
+    margin-top: 1px; }
+  #planner-add-posts-to-plannification .modal-footer .planner-new-post-save:hover {
+    opacity: 0.7; }
+
+.midrub-planner {
+  z-index: 1051;
+  min-height: 320px; }
+  @media only screen and (max-width: 1199px) {
+    .midrub-planner {
+      left: 50px !important; } }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,1112 @@
+<!doctype html>
+<!--[if IE 9]> <html class="ie9 no-js supports-no-cookies" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js supports-no-cookies" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Midrub Documentation</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <!-- Load Materialize Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Load Main CSS -->
+  <link href="assets/styles/css/style.css" rel="stylesheet">  
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col xl3 s12">
+                    <div class="col xl12 s12 nav-menu">
+                        <ul>
+                            <li class="dropdown open"><a href="#">Introduction <i class="material-icons expand">expand_more</i><i class="material-icons expand-open">chevron_right</i></a>
+                                <ul>
+                                    <li><a href="#introduction-about-midrub" class="article">About Midrub</a></li>
+                                    <li><a href="#introduction-installation" class="article">Installation</a></li>
+                                    <li><a href="#introduction-cron-jobs" class="article">Cron Jobs</a></li>
+                                    <li><a href="#introduction-common-errors" class="article">Common Errors</a></li>
+                                    <li><a href="#introduction-common-questions" class="article">Common Questions</a></li>
+                                    <li><a href="#introduction-updates" class="article">Updates</a></li>
+                                    <li><a href="#introduction-translation" class="article">Translation</a></li>
+                                    <li><a href="#introduction-plans" class="article">Plans</a></li>
+                                    <li><a href="#introduction-source-and-credit" class="article">Source and credit</a></li>
+                                    <li><a href="#introduction-changelog" class="article">Changelogs</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#">Components <i class="material-icons expand">expand_more</i><i class="material-icons expand-open">chevron_right</i></a>
+                                <ul>
+                                    <li><a href="#components-faq" class="article">Faq System</a></li>
+                                    <li><a href="#components-tickets" class="article">Tickets</a></li>
+                                </ul>                                
+                            </li>                            
+                            <li class="dropdown"><a href="#">Social Networks <i class="material-icons expand">expand_more</i><i class="material-icons expand-open">chevron_right</i></a>
+                                <ul>
+                                    <li><a href="#configuration-twitter" class="article">Twitter</a></li>
+                                    <li><a href="#configuration-blogger" class="article">Blogger</a></li>
+                                    <li><a href="#configuration-youtube" class="article">Youtube</a></li>
+                                    <li><a href="#configuration-dailymotion" class="article">Dailymotion</a></li>
+                                    <li><a href="#configuration-facebook" class="article">Facebook</a></li>
+                                    <li><a href="#configuration-facebook-ad-labels" class="article">Facebook Ad Labels</a></li>
+                                    <li><a href="#configuration-facebook-groups" class="article">Facebook Groups</a></li>
+                                    <li><a href="#configuration-facebook-pages" class="article">Facebook Pages</a></li>
+                                    <li><a href="#configuration-flickr" class="article">Flickr</a></li>
+                                    <li><a href="#configuration-google-my-business" class="article">Google My Business</a></li>
+                                    <li><a href="#configuration-google-plus" class="article">Google Plus</a></li>
+                                    <li><a href="#configuration-imgur" class="article">Imgur</a></li>
+                                    <li><a href="#configuration-instagram" class="article">Instagram</a></li>
+                                    <li><a href="#configuration-instagram-api" class="article">Instagram API</a></li>
+                                    <li><a href="#configuration-instagram-insights" class="article">Instagram Insights</a></li>
+                                    <li><a href="#configuration-instagram-stories" class="article">Instagram Stories</a></li>
+                                    <li><a href="#configuration-linkedin" class="article">Linkedin</a></li>
+                                    <li><a href="#configuration-linkedin-companies" class="article">Linkedin Companies</a></li>
+                                    <li><a href="#configuration-linkedin-pages" class="article">Linkedin Pages</a></li>
+                                    <li><a href="#configuration-medium" class="article">Medium</a></li>
+                                    <li><a href="#configuration-ok" class="article">Odnoklassniki</a></li>
+                                    <li><a href="#configuration-pinterest" class="article">Pinterest</a></li>
+                                    <li><a href="#configuration-pinterest-boards" class="article">Pinterest Boards</a></li>
+                                    <li><a href="#configuration-pinterest-bot" class="article">Pinterest Bot</a></li>
+                                    <li><a href="#configuration-reddit" class="article">Reddit</a></li>
+                                    <li><a href="#configuration-telegram-channels" class="article">Telegram Channels and Groups</a></li>
+                                    <li><a href="#configuration-tumblr" class="article">Tumblr</a></li>
+                                    <li><a href="#configuration-vimeo" class="article">Vimeo</a></li>
+                                    <li><a href="#configuration-vk" class="article">Vk</a></li>
+                                    <li><a href="#configuration-wordpress" class="article">Wordpress</a></li>
+                                    <li><a href="#configuration-wordpress-platform" class="article">Wordpress Platform</a></li>
+                                    <li><a href="#configuration-xing" class="article">Xing</a></li>
+                                </ul>                                
+                            </li>
+                            <li class="dropdown"><a href="#">Posts <i class="material-icons expand">expand_more</i><i class="material-icons expand-open">chevron_right</i></a>
+                                <ul>
+                                    <li><a href="#posts-introduction" class="article">Introduction</a></li>
+                                    <li><a href="#posts-composer" class="article">Composer Tab</a></li>
+                                    <li><a href="#posts-scheduled" class="article">Scheduled Tab</a></li>
+                                    <li><a href="#posts-insights" class="article">Insights Tab</a></li>
+                                    <li><a href="#posts-history" class="article">History Tab</a></li>
+                                </ul>                                
+                            </li>
+                            <li class="dropdown"><a href="#">Inbox <i class="material-icons expand">expand_more</i><i class="material-icons expand-open">chevron_right</i></a>
+                                <ul>
+                                    <li><a href="#inbox-introduction" class="article">Introduction</a></li>
+                                    <li><a href="#inbox-facebook-pages" class="article">Facebook Pages</a></li>
+                                    <li><a href="#inbox-new-network" class="article">New Network</a></li>
+                                </ul>                                
+                            </li>
+                            <li class="dropdown"><a href="#">Storage <i class="material-icons expand">expand_more</i><i class="material-icons expand-open">chevron_right</i></a>
+                                <ul>
+                                    <li><a href="#storage-introduction" class="article">Introduction</a></li>
+                                </ul>                                
+                            </li>
+                            <li class="dropdown"><a href="#">Payments <i class="material-icons expand-open">chevron_right</i></a>
+                                <ul>
+                                    <li><a href="#payments-paypal" class="article">PayPal</a></li>
+                                    <li><a href="#payments-2checkout" class="article">2Checkout</a></li>
+                                    <li><a href="#payments-stripe" class="article">Stripe</a></li>
+                                    <li><a href="#payments-new-payment" class="article">New Payment Gateway</a></li>
+                                </ul>                                
+                            </li>
+                            <li class="dropdown"><a href="#">Api <i class="material-icons expand-open">chevron_right</i></a>
+                                <ul>
+                                    <li><a href="#api-introduction" class="article">Introduction</a></li>
+                                </ul>                                
+                            </li>
+                            <li class="dropdown"><a href="#">Miscellaneous <i class="material-icons expand-open">chevron_right</i></a>
+                                <ul>
+                                    <li><a href="#miscellaneous-dropbox" class="article">DropBox</a></li>
+                                    <li><a href="#miscellaneous-pixabay" class="article">PixaBay</a></li>
+                                    <li><a href="#miscellaneous-social-login" class="article">Social Login</a></li>
+                                    <li><a href="#miscellaneous-midrub-shortener" class="article">Midrub Shortener</a></li>
+                                    <li><a href="#miscellaneous-google-shortener" class="article">Google Shortener</a></li>
+                                    <li><a href="#miscellaneous-security" class="article">Security</a></li>
+                                </ul>                                
+                            </li>                            
+                        </ul>
+                    </div>                
+                </div>
+                <div class="col xl9 s12 content">
+                    <div class="col xl12 s12">
+                        <div class="row">
+                            <div class="input-field clean col xl12 s12">
+                                <i class="material-icons prefix">search</i>
+                                <input type="text" id="autocomplete-input" placeholder="Ask or enter a search term here…" class="autocomplete">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col clean xl12 s12">
+                                <article class="active" id="introduction-about-midrub">
+                                    <h2>About Midrub</h2>
+                                    <p>Midrub is a platform based on CodeIgniter which allows you to have a Social Marketing Tool. At this moments Midrub supports up to 20 social networks and you can use it to schedule posts, read insights and moderate your comments. It supports RSS Feeds and has a planner where you can schedule easy your posts. </p>
+                                    <p>Midrub is not a toy and it is one of the few scripts which allows you to start a stable business. </p>
+                                    <p>Why Midrub could be the right solution to start an online business:</p>
+                                    <ol>
+                                        <li>Midrub uses official api and you can sign in a contract with social networks. Official api means stable business because there aren't bugs in the api.</li>
+                                        <li>Any reported bug will be fixed in the same day or if is minor will be fixed in the next update(max a month).</li>
+                                        <li>Midrub already has the same planner which you're seeing in Hootsuite, and in november will be added a button in the quick schedule popup which will allow to select the days of the week and hour when to publish a post.</li>
+                                        <li>Midrub is not another script which will be closed for a stupid reason. You can be sure it will be improved for years.</li>
+                                        <li>Create your custom themes.</li>
+                                        <li>Manage menu from admin.</li>
+                                        <li>Create a custom theme for frontend.</li>
+                                        <li>Create custom plans with dynamic added features.</li>
+                                        <li>The Midrub Stream and Midrub's ADS Manager will make Midrub more useful than other similar tools.</li>
+                                    </ol>
+                                    <p>If you have a question, you can look in the Midrub's blog <a href="http://blog.midrub.com/" target="_blank">http://blog.midrub.com/</a> where you will find more information or here <a href="https://www.midrub.com/" target="_blank">https://www.midrub.com/</a>.</p>
+                                    <p>In my Youtube Channel you will find videos about any Midrub's feature <a href="https://www.youtube.com/channel/UCQ-LP-o5nlieQfdKfFjX0Sw" target="_blank">https://www.youtube.com/channel/UCQ-LP-o5nlieQfdKfFjX0Sw</a></p>
+                                </article> 
+                                <article id="introduction-installation">
+                                    <h2>Midrub Installation</h2>
+                                    <p>Download Midrub platform and extract all files from Midrub-app folder, compile it on server.</p>
+                                    <p>Create MySQL data base and import the sql file from the documentation folder.</p>
+                                    <p>Open <strong>config.php</strong> file from <strong>application/config/</strong> and replace the <strong>http://www.examle.com/</strong> with your website address, also replace <strong>Midrub</strong> with your site name. Add your contact email (will be used as expeditor for sent messages) and notification email where you will receive the system notifications.</p>
+                                    <p>Open file <strong>database.php</strong> from <strong>application/config/</strong> folder and add the server address to the created data base, the name of the data base, user and password. </p>
+                                    <p>After you have accomplished the steps above, you have to configure the platform, so you can connect social networks to make posts. Next you will find detailed information about how to configure each social network. </p>
+                                    <p>You can login on your website with username: <strong>administrator</strong> and password: <strong>12345678</strong> as admin.</p>
+                                    <p>You can see how to install Midrub here <a href="https://www.youtube.com/watch?v=Cr_HODu9ou4" target="_blank">https://www.youtube.com/watch?v=Cr_HODu9ou4</a></p>
+                                    <p>After installation, please sign in the first time as administrator.</p>
+                                    <p>Then update Midrub from admin like here <a href="https://www.youtube.com/watch?v=8UyG_SY9Piw" target="_blank">https://www.youtube.com/watch?v=8UyG_SY9Piw</a></p>
+                                    <p>And enable the app Dashboard because without you will get 404 error.</p>
+                                    <br>
+                                    <h3>For more details, please watch the videos below: </h3>
+                                    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/2-uJ0Bm6JO4" frameborder="0"></iframe></p>
+                                    </br>
+                                    <br>
+                                    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/DXPCCHMSdIc" frameborder="0" allowfullscreen></iframe></p>
+                                </article>                                
+                                <article id="introduction-cron-jobs">
+                                    <h2>Cron Jobs</h2>
+                                    <p>For scheduling, RSS, emails, bots, etc. in Midrub you need to configure the the cron jobs command. At this moments you can use a file or urls. </p>
+                                    <p>You can use these commands:</p>
+                                    <ul>
+                                        <li>wget -O –spider https://www.midrub.com/cron-job &gt;/dev/null 2&gt;&amp;1</li>
+                                    </ul>
+                                    <p>Or you can use a file:</p>
+                                    <p>* * * * * wget -O –spider https://www.midrub.com/cron.php  &gt;/dev/null 2&gt;&amp;1</p>
+                                    <p>You have to replace the url https://www.midrub.com/ with the url you have in the config.php file.</p>
+                                    <p><iframe src="https://www.youtube.com/embed/bQICvErOq44" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+                                    <p>The cron commands above aren't universal. A few of servers will not support them. Better to ask about your server provider.</p>
+                                </article> 
+                                <article id="introduction-common-errors">
+                                    <h2>Common Errors</h2>
+                                    <p>Here are all common errors. Please use CTRL + F to search errors in this section. </p>
+                                    <br>
+                                    <h2>403 denied access</h2>
+                                    <p><u>Solution:</u> Please ensure the cookie_domain variable in config.php has a correct value.</p>
+                                    <br>
+                                    <br>
+                                    <h2>404 Not Found</h2>
+                                    <p><u>Solution:</u> Please ensure you have uploaded the htaccess. If you have edited it, upload from zip again the htaccess. You don't need to edit htaccess.</p>
+                                    <br>
+                                    <br>
+                                    <h2>500 Internal Server Error</h2>
+                                    <p><u>Solution:</u> There are three reasons for this error: wrong file permissions, timeout limit reach and htaccess has wrong characters(please restore it).</p>                                    
+                                    <br>
+                                    <br>
+                                    <h2>Class 'Phar' not found</h2>
+                                    <p><u>Solution:</u> Please contact your server provider.</p> 
+                                    <br>
+                                    <br>
+                                    <h2>Parse error: syntax error, unexpected '.', expecting ']' in </h2>
+                                    <p><u>Solution:</u> Midrub runs on PHP 5.6+. Now your version is older than PHP 5.6.</p>   
+                                    <br>
+                                    <br>
+                                    <h2>Fatal error: Class 'InstagramAPI\Instagram' not found in </h2>
+                                    <p><u>Solution:</u> By default the private Instagram library missing in Midrub and you have to install it.</p>   
+                                    <br>
+                                    <br>
+                                    <h2>Module 'timezonedb' already loaded</h2>
+                                    <p><u>Solution:</u> Please contact your server provider.</p> 
+                                    <br>
+                                    <br>
+                                    <h2>Call to undefined function mysqli_init()</h2>
+                                    <p><u>Solution:</u> Please install the mysqli extension in your php.ini.</p>   
+                                    <br>
+                                    <br>
+                                    <h2>You already have an account</h2>
+                                    <p><u>Solution:</u> This is not an error. Is just a restriction to prevent abuse. You can limit signup from same ip for a day or forever from admin.</p>    
+                                    <br>
+                                    <br>
+                                    <h2>SMTP doesn't work</h2>
+                                    <p><u>Solution:</u> Codeigniter uses three ways to send emails: smtp, email and sendmail. By default is sendmail. Please try each from your SMTP configuration at SMTP Protocol.</p>  
+                                    <br>
+                                    <br>
+                                    <h2>file_exists(): open_basedir restriction in effect.</h2>
+                                    <p><u>Solution:</u> Please contact your server provider.</p>  
+                                    <br>
+                                    <br>
+                                    <h2>In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column </h2>
+                                    <p><u>Solution:</u> Go to your phpmyadmin, click on sql and enter the code from here: https://jsfiddle.net/zj9e09hj/</p>
+                                    <br>
+                                    <br>
+                                    <h2>ci_sessions doesn't exist</h2>
+                                    <p><u>Solution:</u> Please import the sql code.</p>                                    
+                                </article>   
+                                <article id="introduction-common-questions">
+                                    <h2>Common Questions</h2>
+                                    <p>Here are all common questions and answers. Please use CTRL + F to search questions in this section. </p>
+                                    <br>
+                                    <h2>How to update Midrub?</h2>
+                                    <p><u>Answer:</u> Midrub has automatic update system, but a large number of files changed can't be updated automatically. I want to avoid interruption of download due to server configuration limits for someone. For more details please look in the Update's(left side) section.</p>
+                                    <br>
+                                    <br>
+                                    <h2>How to custom the styles for user dashboard?</h2>
+                                    <p><u>Answer:</u> Create a file called custom.css in the folder assets/user/styles/css and add there your custom styles. If you will update Midrub manually, please backup the file.</p>
+                                    <br>
+                                    <br>
+                                    <h2>How to enable Emails in Midrub?</h2>
+                                    <p><u>Answer:</u> First enabled from Admin -> Settings(Email Marketing). Then enable per plan by adding in the field "Number of sent emails" a number greater than 0. Midrub is rewriting now from scratch and in december will be added an advanced stream not only for social, but for each business needs and ads manager. After in January i will create a new Email composer professional like on MailChimp and the section Emails will be like Posts with history, insights, planner, etc.</p>
+                                    <br>
+                                    <br>
+                                    <h2>Why is soo hard to configure the script?</h2>
+                                    <p><u>Answer:</u> Midrub is not hard to be configured. But the social networks requires efforts to be configured. In the Social Networks(left side) tab you can watch videos how to configure them.</p>
+                                    <br>
+                                    <br>
+                                    <h2>How to configure the Gmail SMTP in Midrub?</h2>
+                                    <p><u>Answer:</u> Please watch the video <a href="https://www.youtube.com/watch?v=hyYb35XnDVI" target="_blank">https://www.youtube.com/watch?v=hyYb35XnDVI</a></p>
+                                    <br>
+                                    <br>
+                                    <h2>How to use the proxy in Midrub?</h2>
+                                    <p><u>Answer:</u> Midrub supports proxies only for Instagram private library. Other social networks not requires a proxy because are using official api and you can't have problems with the api. The proxy can be added for each user or for all.</p>
+                                    <br>
+                                    <br>
+                                    <h2>Where i can add my timezone?</h2>
+                                    <p><u>Answer:</u> Midrub uses the device time and the timezone is not important. Midrub always worked without the timezone, but in this year was added team and i think to add timezone to avoiod scheduling problems for team members which have different location.</p>
+                                    <br>
+                                    <br>
+                                    <h2>Why the database's table ci_sessions is soo big?</h2>
+                                    <p><u>Answer:</u> The table ci_sessions is the CodeIgniter's table where are saved all sessions. By default the table should be emptied automatically. It is based on the php options gc_probability and gc_divisor. If the table ci_sessions not empties automatically, contact your server provider.</p>                                    
+                                </article>
+                                <article id="introduction-updates">
+                                    <h2>Updates</h2>
+                                    <p>From the begin Midrub had an original update system. But the update system is not perfect, because a large number of files can't be updated. The max update limit is about 100 files. A lot of servers are slow and have configuration limits and updates with a large number of files will be interrupted before the end.</p>
+                                    <p>I've created at the begin the system update for bugs and i'm using it for this scope more. If you're reporting a bug, i'm not interested to make you wait a new update in a month. I will provide imediatelly a new update with solution from admin(this was my goal from the begin).</p>
+                                    <p>In august - september 2019 i will develop a new update solution which will allow you easily to update/install Midrub's base, apps, components, plugins and themes. Updates after will be always possible to get from admin panel.</p>
+                                    <br>
+                                    <br>
+                                    <h3>After manual update is required an automatic update from admin.</h3>
+                                    <br>
+                                    <h2>How to update Midrub manually?</h2>
+                                    <p>To update Midrub, you don't need to touch the database, htaccess or vendor folder. Just backup the files application/config/config.php and application/config/database.php because the files contains your configuration.</p>
+                                    <p>The backup folders assets/img where are the system images and assets/share where are stored the users files.</p>
+                                    <p>Copy from CodeCanyon application and assets folders. Then restore your backup.</p>
+                                    <p>I recommend you a professional update. Install Midrub in a test folder too and after each update test anything. If you're satisfied with the new update, copy it in your main location if no, contact me.</p>
+                                    <p>Please watch the video below to understand how you can easy update Midrub in 3 minutes:</p>
+                                    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/gw1Xg3-PO6s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                                    <p>Then update Midrub from admin like here <a href="https://www.youtube.com/watch?v=U6fWdyTW7JQ" target="_blank">https://www.youtube.com/watch?v=U6fWdyTW7JQ</a></p>
+                                    <p>If you have translated Midrub please look in the section Changelogs to see which words were added in the last update.</p>
+                                </article>
+                                <article id="introduction-translation">
+                                    <h2>How to translate Midrub</h2>
+                                    <p>Midrub can be translated in any language you want, but is not simply for more reasons: a lot of files to translate, at each update are added new words and requires a lot of attention.</p>
+                                    <p>You have first to create a new language folder here application/language. After you have to copy each files from the folder english and translate them. Each app has its language folders and you have to translate them in the same way.</p>
+                                    <p>After that, open the file application/config/config.php and at the variable $config[‘language’] replace the 'english' with the word name of your translation folder.</p>
+                                    <p>You have to copy this file <a href="https://github.com/benedmunds/CodeIgniter-Standard-Project/blob/master/system/language/english/form_validation_lang.php">https://github.com/benedmunds/CodeIgniter-Standard-Project/blob/master/system/language/english/form_validation_lang.php</a> in your translation folder and translate too.</p>
+                                    <p>And this file&nbsp;<a href="https://github.com/avenirer/CodeIgniter-single-language-site/blob/master/application/language/romanian/email_lang.php">https://github.com/avenirer/CodeIgniter-single-language-site/blob/master/application/language/romanian/email_lang.php</a> in your translation folder if you can't send more emails.</p>
+                                    <p>In this way you can easily translate Midrub in any language you want.</p>
+                                    <p>Please remember, each update means new words to translate, just copy them from the original english files in your edited files.</p>
+                                    <p>To understand better how Midrub can be translated, please watch the video below:</p>
+                                    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/x9HJfCnoaAE" frameborder="0" allowfullscreen></iframe></p>
+                                </article>    
+                                <article id="introduction-plans">
+                                    <h2>Plans</h2>
+                                    <p>The plans page was changed a lot from the version 0.0.7.4. Now it is dynamic and you have to enable plans limits for each enabled app. If the apps aren't enabled, you will not see them in the plans page.</p>
+                                    <p>Please read the description at each plan limit. It's important the price to have decimals. It's important for currency code to be correct. It's important to add a correct storage user for each plan. </p>
+                                </article>
+                                <article id="introduction-source-and-credit">
+                                    <h2>Source and credit</h2>
+                                    <p>Midrub uses the next modules/libraries:</p>
+                                    <ul>
+                                        <li><a href="http://www.openwall.com/phpass/" target="_blank">Bcrypt</a> - used for password hashing.</li>
+                                        <li><a href="http://summernote.org/" target="_blank">Summernote</a> - used for writing/editing notifications and templates sent by email.</li>
+                                        <li><a href="https://twitteroauth.com/" target="_blank">TwitterOAuth</a> - used for login/sign up and publishing posts on Twitter.</li>
+                                        <li><a href="https://github.com/facebook/facebook-php-sdk-v4" target="_blank">Facebook SDK for PHP</a> - used for login/sign up and publishing posts on Facebook.</li>
+                                        <li><a href="https://github.com/google/google-api-php-client" target="_blank">Google APIs Client Library for PHP
+                                            </a> - used for publishing articles on Blogger.</li>
+                                        <li><a href="https://github.com/jonathantorres/medium-sdk-php" target="_blank">Medium SDK for PHP
+                                            </a> - used for publishing articles on Medium.</li>
+                                        <li><a href="https://github.com/ashwinks/PHP-LinkedIn-SDK" target="_blank">PHP LinkedIn SDK</a> - used for publishing articles on Linkedin.</li>
+                                        <li><a href="https://github.com/dirkgroenen/Pinterest-API-PHP" target="_blank">Pinterest API - PHP</a> - used for publishing photos and text on Pinterest.</li>   
+                                        <li><a href="https://github.com/tumblr/tumblr.php" target="_blank">Tumblr API v2 PHP Client</a> - used for publishing articles and photos on Tumblr.</li>
+                                        <li> <a href="http://jquery.com" target="_blank">Jquery/Ajax</a> - allow us to send/load data from the server without a browser page refresh.</li>
+                                        <li><a href="http://morrisjs.github.io/morris.js/">morris.js</a> - a javascript graph library.</li>
+                                        <li><a href="https://github.com/mgp25/Instagram-API">Instagram PHP</a> - an Instagram's private API.</li>
+                                        <li> <a href="http://codeigniter.com" target="_blank">Codeigniter(the last version 3.1.4)</a> - we have chosen this php framework, because it is easy simple and can be used by any php developer.</li>
+                                        <li> <a href="http://getbootstrap.com" target="_blank">Bootstrap</a> - we have chosen this library, because it is easy to develop a responsive web site.</li>
+                                        <li> <a href="https://www.iconfinder.com/rebininfotech" target="_blank">Rebin Infotech</a> - author of the PayPal icon.</li>
+                                        <li> <a href="https://www.iconfinder.com/laurareen" target="_blank">Laura Reen</a> - author of the 2checkout icon.</li>
+                                        <li> <a href="https://www.iconfinder.com/yanlu" target="_blank">Yannick Lung</a> - author of the upload list icon.</li>
+                                        <li> <a href="http://www.chartjs.org/samples/latest/" target="_blank">Chart.js</a> - the charts from the user's panel.</li>
+                                        <li> <a href="https://github.com/mervick/emojionearea" target="_blank">EmojiOne Area</a> - Emojione icons.</li>
+                                        <li> <a href="https://www.iconfinder.com/icons/272704/image_icon" target="_blank">Jozef Krajčovič</a> - cover for missing image/video cover.</li>
+                                        <li> <a href="https://pixabay.com/en/avatar-icon-placeholder-1577909/" target="_blank">WingTillDie</a> - profile image for missing photo.</li>
+                                    </ul>
+                                </article> 
+                                <article id="introduction-changelog">
+                                    <h2>Changelogs</h2>
+                                    
+                                    <p><strong>After manual update is required an automatic update from admin.</strong></p>
+
+                                    <h4>Version 0.0.8.0</h4>
+                                    
+                                    <p>For more details please look here: <a href="https://www.midrub.com/articles/midrub-0-0-8-0-final" target="_blank">https://www.midrub.com/articles/midrub-0-0-8-0-final</a></p>
+                                    <br>
+                                    <br>                                     
+
+                                    <h4>Version 0.0.7.9</h4>
+                                    
+                                    <p>For more details please look here: <a href="https://www.midrub.com/articles/midrub-0-0-7-9-final" target="_blank">https://www.midrub.com/articles/midrub-0-0-7-9-final</a> and <a href="https://www.midrub.com/articles/what-you-should-know-about-midrub-0-0-7-9" target="_blank">https://www.midrub.com/articles/what-you-should-know-about-midrub-0-0-7-9</a></p>
+                                    <br>
+                                    <br> 
+
+                                    <h4>Version 0.0.7.8 Beta 2</h4>
+                                    
+                                    <p>If you have Facebook Ads Manager, please wait several hours until will be available a new version of the Facebook Ads Manager on CodeCanyon because the Facebook Business library was updated.</p>
+                                    
+                                    <p>New Features:</p>
+                                    
+                                    <ul>
+                                        <li>Was changed the Midrub's Core and in the following months the new core will replace all existing Midrub's structure and you will have only application/base and assets/base as Midrub's core. Other folders will be CodeIgniter's folders/files.</li>
+                                        <li>Midrub's themes allows you to develop your own theme by using html code. In the new public documentation you will have instructions about how to create Midrub's themes.</li>
+                                        <li>Removed accounts pagination option from user's settings. Now by default is enabled.</li>
+                                    </ul>
+                                    
+                                    <p>Fixes:</p>    
+                                    
+                                    <ul>
+                                        <li>If a social network is disabled, connected accounts won't be more displayed.</li>
+                                    </ul>
+                                    
+                                    <p>If you have translated Midrub, you can see the last added words here <a href="https://drive.google.com/open?id=1w6nrrbTevcoxoMf_PJp1GOMLHmvNtLOS" target="_blank">https://drive.google.com/open?id=1w6nrrbTevcoxoMf_PJp1GOMLHmvNtLOS</a></p>
+                                    
+                                    <br>
+                                    <br>                                      
+                                    
+                                    <h4>Version 0.0.7.7 Beta 4</h4>
+                                    
+                                    <p>Please remember to update vendor too if you have Facebook Ads Manager, because i've installed the Facebook Business SDK.</p>
+                                    
+                                    <p>New Features:</p>
+                                    
+                                    <ul>
+                                        <li>Added delete post button for scheduled RSS’s posts.</li>
+                                        <li>Added account list for selected Group i the history tab for both manual posts and rss posts.</li>
+                                        <li>Integrated the media deletion hook in the Posts and now you won’t see more wrong links for deleted images added to a post.</li>
+                                        <li>Button to delete schedulig RSS posts.</li>
+                                        <li>Midrub api with permissions requests like on Facebook and token generation. Api features are dynamic.</li>
+                                        <li>Posts Reports based on selected time, social network and accounts.</li>
+                                    </ul>
+                                    
+                                    <p>Fixes:</p>    
+                                    
+                                    <ul>
+                                        <li>Fixed responsive bugs.</li>
+                                        <li>Fixed css errors.</li>
+                                        <li>Fixed drag and drop media.</li>
+                                        <li>Mantain aspect ratio for images.</li>
+                                    </ul>
+                                    
+                                    <p>If you have translated Midrub, you can see the last added words here <a href="https://drive.google.com/open?id=1w6nrrbTevcoxoMf_PJp1GOMLHmvNtLOS" target="_blank">https://drive.google.com/open?id=1w6nrrbTevcoxoMf_PJp1GOMLHmvNtLOS</a></p>
+                                    
+                                    <br>
+                                    <br>                                    
+                                    
+                                    <h4>Version 0.0.7.6</h4>
+                                    
+                                    <p>New Features:</p>
+                                    
+                                    <ul>
+                                        <li>Storage app – at this time has file manager and categories but image editor comming in the next week.</li>
+                                        <li>Updated Linkedin api and now is possible to publish in Linkedin profiles. We’ve applied for partnership(made more requests) and as soon will be approved, will be added companies and groups. Old library for Linkedin Companies is still available but i don’t know how long will work.</li>
+                                        <li>New Admin Settings page – will be released in the next week.</li>
+                                        <li>Affiliates section based on coupon codes – will be released in the next week.</li>
+                                        <li>Download Photos from url.</li>
+                                        <li>Popular Hashtags suggestions – will be in the next week.</li>
+                                        <li>Option to enable url field – will be in the next week.</li>
+                                    </ul>
+                                    
+                                    <p>If you have translated Midrub, you can see the last added words here <a href="https://drive.google.com/open?id=1rFcft6Vtfs5Kdzmywiv0oO0UybGBmEXm" target="_blank">https://drive.google.com/open?id=1rFcft6Vtfs5Kdzmywiv0oO0UybGBmEXm</a></p>
+                                    
+                                    <br>
+                                    <br>
+                                    
+                                    <h4>Version 0.0.7.5</h4>
+                                    
+                                    <p>For more details please click here <a href="http://blog.midrub.com/midrub-0-0-7-5/" target="_blank">http://blog.midrub.com/midrub-0-0-7-5/</a></p>
+                                    
+                                    <p>If you have apps(other than Posts and Dashboard), please backup them and then restore. If you have other posting classes in application/autopost, please backup them and then restore, if you have a custom payment classes, please backup and then restore. Same for vendor's folders.</p>
+                                    <ol>
+                                        <li><strong>New User Settings Page</strong> – the user’s Settings page has a new design which will integrate all settings, api’s apps, invoices, plan usage, connected services via api,&nbsp;2 factor authentication, etc. In the Settings page users will be able to control their payment subscriptions.</li>
+                                        <li><strong>Plan Usage</strong> – now users will be able to see for what they’re paying and will see what missing.</li>
+                                        <li><strong>Settings Invoices</strong> – users will see in this section all their invoices and they will be able to print them.</li>
+                                        <li><strong>New modern Faq Section</strong>&nbsp;– with advanced tickets and categories(this feature will be in this version but in beta 1 is not available).</li>
+                                        <li><strong>Hashtags Support</strong> – now hashtags are supported by Imgur, Medium and Tumblr. You have to add #hashtag in the post’s message.</li>
+                                        <li><strong>Instagram Replies</strong> – now you can reply to Instagram comments as reply.</li>
+                                        <li><strong>Hooks for Apps</strong> – this is an essential feature added for apps. Without it the apps are useless. In the next week i will create a developer documentation where i will explain step by step how to add new features in Midrub.</li>
+                                        <li><strong>User Settings for Apps</strong> – now you can create a custom class with settings for each Midrub’s app which will be displayed in the user Settings page.</li>
+                                        <li><strong>RSS Attached Images</strong> – now RSS Feed can read the attached images as files</li>
+                                        <li><strong>Security Monitoring System</strong> – added a security monitoring system which verifies every minute for non Midrub's files, deletes them and send you notification.</li>
+                                        <li><strong>Facebook Graph</strong> – Facebook api is not supported more. I've replaced with graph.</li>
+                                        <li><strong>Account list pagination</strong> – Now if someone has more than 10 social accounts, from admin ca enable pagination.</li>
+                                    </ol>
+                                    
+                                    <p>Fixed bugs:</p>
+                                    
+                                    <ol>
+                                        <li>Improved the Midrub’s menu icon and font.</li>
+                                        <li>Pagination for RSS posts history.</li>
+                                        <li>Changed colors for social buttons.</li>
+                                        <li>Improved the RSS Posts widget from the Dashboard’s app.</li>
+                                        <li>Improved Midrub for mobile compatibility</li>
+                                    </ol>
+                                    
+                                    <p>Fixed vulnerabilities:</p>
+                                    
+                                    <ol>
+                                        <li>All user’s options now are restricted. Them will be saved only if are present in my default list or if are present in a Midrub’s application.</li>
+                                    </ol>
+                                    
+                                    <p>If you have translated Midrub, please look here <a href="https://drive.google.com/open?id=1SLC-QT8ZZT_hsrrYxrGKukaKc_ARr5FN" target="_blank">https://drive.google.com/open?id=1SLC-QT8ZZT_hsrrYxrGKukaKc_ARr5FN</a> too see which words were added or removed in this update.</p>
+                                    
+                                    <p>Was updated completely the language file application/language/english/default_tickets_lang.php</p>
+                                    <br>
+                                    <br>
+                                    <h4>Version 0.0.7.4</h4>
+                                    <p>This update required a lot of time due to really important changes which required a long test period. </p>
+                                    <ul>
+                                        <li><strong>Plans Page</strong> - the page was rewritten from scratch and added support for apps. Now apps will import them plan's limits once will be enabled.</li>
+                                        <li><strong>Cron Job</strong> - i'm going to replace all cron commands url with one single url which will be cron-job. For more details please look in the section Introduction -> Cron Jobs.</li>
+                                        <li><strong>User Deletion</strong> - since the apps are standalone and each app has its table in the database, each app should delete the user data when the user will be deleted. For this reason was added this feature in the apps.</li>
+                                        <li><strong>My Team widget</strong> - the widget My Team from dashboard was disabled for team's member, was blocked the page Plans for team's member and upgrade's links were removed too.</li>
+                                        <li><strong>RSS Section</strong> - was moved in the Posts app. Since more apps will have a RSS section, i've moved RSS section in the Posts's app and was improved. The Faq can be enabled or disabled from Admin Panel -> Apps.</li>
+                                        <li><strong>Imgur</strong> - Imgur can display your photos in a hour to more than 100 people i've added the possibility to publish photos in the gallery and will be indexed by Google. Please remember Imgur could easy ban you for abuse(ban means your photos will be hidden for a period).</li>
+                                        <li><strong>Inbox's app</strong> - is an universal application which allows to add all your inboxes(emails, twitter, google, etc) and automatize them. By default you have Facebook Pages where you can reply to messages manually, see them, see the author, create quick replies and private messages for each page. The Inbox app has a plan limit for bot's messages. Later will be added other limits for plans. I'm sorry but is not possible to use the alternative Facebook classes for this app. I've tried but is not possible.</li>
+                                        <li><strong>Networks</strong> - networks doesn't mean more social networks. I've added a type field for each Networks. The accounts manager in Midrub will be the same but networks will be displayed based on types. For example in the Inbox's app is displayed only Facebook Pages now. In the Ads Manager will be displayed only networks which supports ads. On new Emails app will be displayed the networks which supports smtp. On the Posts app you can see only Networks which has post, rss or insights type. </li>
+                                        <li><strong>URL Shortener</strong> - in the Posts's app was added support for url Shortener. By default will be used Midrub Shortener and you have the option in admin to enable Google Shortener. In near future will be added more options. </li>
+                                        <li><strong>Posting Error</strong> - in the History tab you will see posting errors for each social account. Users will see posting errors for both manual and RSS's posts. </li>
+                                        <li><strong>Bots name and description</strong> - was added now the possibity to add original name for each bot(only admin will see real name). Same for description. You have to edit the Bots classes which are standalone.</li>
+                                        
+                                    </ul>
+                                    <p>If you have translated Midrub, please look here <a href="https://drive.google.com/open?id=1rFcft6Vtfs5Kdzmywiv0oO0UybGBmEXm" target="_blank">https://drive.google.com/open?id=1rFcft6Vtfs5Kdzmywiv0oO0UybGBmEXm</a> too see which words were added or removed in this update.</p>
+                                </article>   
+                                <article id="components-faq">
+                                    <h2>Faq System</h2>
+                                    <p>Midrub has now a new Faq Article section which supports multilanguage articles and categories. The core of the FAQ section was rewritten from scratch and now it looks more professional. From admin you can create a list with categories and subcategories. Than with a click you can select the categories for each Faq article.</p>
+                                    <p>The Faq section provides support for any number of languages you have. For each language folder, you will see new inputs and the articles for user will be in the selected&nbsp;language. Same for categories.</p>
+                                    <p><iframe src="https://www.youtube.com/embed/4IhSgpMQroo" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+                                </article>
+                                <article id="components-tickets">
+                                    <h2>Tickets</h2>
+                                    <p>The Tickets system in Midrub was rewritten from scratch and now users can create new tickets from the Faq section. As admin you can restrict the creation of new tickets per time or disable it. Was removed the attachements support. Now is supported only subject and ticket’s message. But i think in the future will be added other fields.</p>
+                                    <p>As admin you can reply to tickets. When someone creates a ticket, the ticket count will be displayed in the admin panel until admin will reply. Same for user, user will see notification for not replied tickets. User can close it or reply.</p>
+                                    <p>Admin has now the option to mark as important the tickets.</p>
+                                    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/Viyr4Vzrb3Q" frameborder="0" allowfullscreen=""></iframe></p>
+                                </article>
+                                <article id="configuration-twitter">
+                                    <h2>How to configure Twitter</h2>
+                                    <p>If you don't have a develop account on Twitter, please contact me by email.</p>
+                                    <ul>
+                                        <li>Go to <a href="https://developer.twitter.com/" target="_blank">https://developer.twitter.com/</a></li>
+                                        <li>Click on your username -> Apps</li>
+                                        <li>Click on the button <strong>Create an app</strong></li>
+                                        <li>Add correct callback https://www.website.com/callback/twitter(url like in your config.php)</li>
+                                        <li>Add another correct callback https://www.website.com/user/callback/twitter(url like in your config.php)</li>
+                                        <li>Copy the API key and API secret key. Paste them in Midrub -> Admin -> User -> Networks -> Twitter</li>
+                                    </ul>
+                                    <br>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6tYD-YY7qsc" frameborder="0" allowfullscreen></iframe>
+                                    <br>
+                                    <br>
+                                    <p>Please be careful with Twitter because them don't allows more to publish same tweet in two accounts. Twitter allows to publish up to 4 photos. Short video and links are part of the tweet(280 characters - link).</p>
+                                    <br>
+                                </article> 
+                                <article id="configuration-blogger">
+                                    <h2>How to configure Blogger</h2>
+                                    <p>Blogger is easy to configure. But you have to follow 200% my video below.</p>
+                                    <ul>
+                                        <li>Go to <a href="https://console.developers.google.com/" target="_blank">https://console.developers.google.com/</a></li>
+                                        <li>Create a new project.</li>
+                                        <li>Enable the Blogger's library.</li>
+                                        <li>Add correct callback https://www.website.com/user/callback/blogger(url like in your config.php)</li>
+                                        <li>Copy the App key, Client ID and Client secret key and paste in Midrub -> Admin -> User -> Networks -> Blogger</li>
+                                    </ul>
+                                    <br>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2BJin72_uKA" frameborder="0" allowfullscreen></iframe>
+                                    <br>
+                                    <br>
+                                    <p>You can use same project for Youtube, Blogger, Google Plus, Google My Business and soon Youtube Insights. Blogger don't allows to publish photos, links or tags. You can publish in wanted category.</p>
+                                    <br>
+                                </article>
+                                <article id="configuration-youtube">
+                                    <h2>How to configure Youtube</h2>
+                                    <p>Youtube is easy to configure. But you have to follow 200% my video below. First follow the Blogger's configuration video.</p>
+                                    <ul>
+                                        <li>Go to <a href="https://console.developers.google.com/" target="_blank">https://console.developers.google.com/</a></li>
+                                        <li>Enable the YouTube Data API v3's library.</li>
+                                        <li>Add correct callback https://www.website.com/user/callback/youtube(url like in your config.php)</li>
+                                        <li>Copy the App key, Client ID and Client secret key and paste in Midrub -> Admin -> User -> Networks -> Youtube</li>
+                                    </ul>
+                                    <br>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/27IJC0xnSRQ" frameborder="0" allowfullscreen></iframe>
+                                    <br>
+                                    <br>
+                                    <p>In a really short time will be added Youtube comments moderation and insights. Will be required to enabled new two libraries.</p>
+                                    <br>
+                                </article>  
+                                <article id="configuration-dailymotion">
+                                    <h2>How to configure Dailymotion</h2>
+                                    <p>Dailymotion is very easy to configure. </p>
+                                    <ul>
+                                        <li>Go to <a href="https://www.dailymotion.com/settings/developer" target="_blank">https://www.dailymotion.com/settings/developer</a></li>
+                                        <li>Click on the button <strong>Create a new API Key</strong></li>
+                                        <li>Add correct callback https://www.website.com/user/callback/dailymotion(url like in your config.php)</li>
+                                        <li>Copy the API Key and API Secret and paste in Midrub -> Admin -> User -> Networks -> Dailymotion</li>
+                                    </ul>
+                                    <br>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DZ6xOc4WDe0" frameborder="0" allowfullscreen></iframe>
+                                    <br>
+                                    <br>
+                                    <p>Dailymotion hasn't priority like Youtube, but as soon as possible will be added comments moderation and insights.</p>
+                                    <br>
+                                </article> 
+                                <article id="configuration-facebook">
+                                    <h2>How to configure Facebook</h2>
+                                    <p>Facebook option must be configured if you want login/signup via Facebook. BUT DON'T ENABLE IT. Just paste the App ID and Secret. Before this was used to publish on profiles, 
+                                    but from 1 august Facebook requires to convert a profile in a business page. </p>
+                                    <p>I didn't removed it from Midrub Facebook still allows to share videos in normal Facebook Profiles. And i'm going to develop an advanced video composer and this option will be used in future optionally.</p>
+                                    <p>Correct callback for Facebook login is https://www.website.com/callback/facebook(url like in your config.php)</p>
+                                    <br>
+                                </article>  
+                                <article id="configuration-facebook-ad-labels">
+                                    <h2>How to configure Facebook Ad Labels</h2>
+                                    <p>Facebook Ad Labels is an option based on Facebook Ads Manager <a href="https://codecanyon.net/item/midrub-facebook-ads-manager-script-for-instagram-facebook-and-whatsapp-ads-automatizations/23368805" target="_blank">https://codecanyon.net/item/midrub-facebook-ads-manager-script-for-instagram-facebook-and-whatsapp-ads-automatizations/23368805</a></p>
+                                    <p>You just need to enable it if you have Facebook Ads Manager.</p>
+                                    <br>
+                                </article>  
+                                <article id="configuration-facebook-groups">
+                                    <h2>How to configure Facebook Groups</h2>
+                                    <p>The option Facebook Groups allows to publish in your Facebook Groups. You can even get comments and basic insights.</p>
+                                    <p>Correct callback for Facebook Groups is https://www.website.com/user/callback/facebook_groups(url like in your config.php)</p>
+                                    <p>For more details please contact me in a private message and i will help you to configure it. Is not hard, just i have reasons why i'm not providing more details here.</p>
+                                    <p>You can publish multiple photos. But no multiple videos because Facebook creates more posts not a video gallery.</p>
+                                    <br>
+                                </article> 
+                                <article id="configuration-facebook-pages">
+                                    <h2>How to configure Facebook Pages</h2>
+                                    <p>The option Facebook Pages allows to publish in your Facebook Pages. You can even get comments, moderate them and advanced insights.</p>
+                                    <p>If you want to publish in Facebook Groups like a page, please go to your Facebook Groups Settings and for the option Linked Pages add wanted page.</p>
+                                    <p>Correct callback for Facebook Pages is https://www.website.com/user/callback/facebook_pages(url like in your config.php)</p>
+                                    <p>For more details please contact me in a private message and i will help you to configure it. Is not hard, just i have reasons why i'm not providing more details here.</p>
+                                    <p>You can publish multiple photos. But no multiple videos because Facebook creates more posts not a video gallery.</p>
+                                    <br>
+                                </article> 
+                                <article id="configuration-flickr">
+                                    <h2>How to configure Flickr</h2>
+                                    <p>The option Flickr allows you to publish photos on Flickr. Flickr is still popular but i will add later more features for this social networks.</p>
+                                    <ul>
+                                        <li>Go to <a href="https://www.flickr.com/services/apps/create/apply/" target="_blank">https://www.flickr.com/services/apps/create/apply/</a> but first login on Flickr.</li>
+                                        <li>Create an application.</li>
+                                        <li>Correct callback for Flickr is https://www.website.com/user/callback/flickr(url like in your config.php)</li>
+                                        <li>Copy the API Key and API Secret and paste in Midrub -> Admin -> User -> Networks -> Flickr</li>
+                                    </ul>
+                                    <br>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZKHgxh6qOX0" frameborder="0" allowfullscreen></iframe>
+                                    <br>
+                                    <p>Videos aren't supported. Maybe will be added later.</p>
+                                </article>
+                                <article id="configuration-google-my-business">
+                                    <h2>How to configure Google My Business</h2>
+                                    <p>The option Google My Business allows to connect all your locations from your Google My Business account. Next you can publish posts with text, links and photos.</p>
+                                    <ul>
+                                        <li>First of all you have to request access to the Google My Business api here <a href="https://docs.google.com/forms/d/e/1FAIpQLSfC_FKSWzbSae_5rOpgwFeIUzXUF1JCQnlsZM_gC1I2UHjA3w/viewform" target="_blank">https://docs.google.com/forms/d/e/1FAIpQLSfC_FKSWzbSae_5rOpgwFeIUzXUF1JCQnlsZM_gC1I2UHjA3w/viewform</a></li>
+                                        <li>Once approved you will have the library Google My Business API in your Google Console's account for your application(where you have enabled Google Plus, Youtube and Blogger).</li>
+                                        <li>Correct callback for Google My Business is https://www.website.com/user/callback/google_my_business(url like in your config.php)</li>
+                                        <li>Copy the App key, Client ID and Client secret key and paste in Midrub -> Admin -> User -> Networks -> Google My Business</li>
+                                    </ul>
+                                    <p>Is not soo hard to get the Google My Business api access like how become Google Partner. I know several small companies which has the api access.</p>
+                                </article>
+                                <article id="configuration-google-plus">
+                                    <h2>How to configure Google Plus</h2>
+                                    <p>The option Google Plus allows to publish on the Google Plus profiles if you are Google Partner or if you have a G Suite account. From the 1 august 2019 on Google Plus will be possible to publish only with G Suite(for all companies, Google Partner will not be more important since the social account will be private). And i'm sure the api will be improved for G Suite.</p>
+                                    <ul>
+                                        <li>Go to <a href="https://console.developers.google.com/" target="_blank">https://console.developers.google.com/</a></li>
+                                        <li>Enable the Google+ Domains API's and Google+ API's(for insights and comments moderation) library.</li>
+                                        <li>Add correct callback https://www.website.com/user/callback/google_plus(url like in your config.php)</li>
+                                        <li>Copy the App key, Client ID and Client secret key and paste in Midrub -> Admin -> User -> Networks -> Google Plus</li>
+                                        <li>Next you have to enable Google Plus in your G Suite account.</li>
+                                    </ul>
+                                    <br>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iiGHdBoLzzs" frameborder="0" allowfullscreen></iframe>
+                                    <br>
+                                    <p>If you are Google Partner please contact me by email.</p>
+                                </article> 
+                                <article id="configuration-imgur">
+                                    <h2>How to configure Imgur</h2>
+                                    <p>Imgur is the most popular image hosting. And with Midrub you can publish photos and text on Imgur. Really soon you will have the option to select the album where you want to publish.</p>
+                                    <ul>
+                                        <li>Go to <a href="https://api.imgur.com/oauth2/addclient" target="_blank">https://api.imgur.com/oauth2/addclient</a> but first login.</li>
+                                        <li>Create an application.</li>
+                                        <li>Correct callback for Imgur is https://www.website.com/user/callback/imgur(url like in your config.php)</li>
+                                        <li>Copy the Client ID and Client secret key and paste in Midrub -> Admin -> User -> Networks -> Imgur</li>
+                                    </ul>
+                                    <br>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/shnn4a_Ljus" frameborder="0" allowfullscreen></iframe>
+                                    </br>
+                                </article> 
+                                <article id="configuration-instagram">
+                                    <h2>How to configure Instagram</h2>
+                                    <p>To publish with official on Instagram you have to be a Facebook Marketing Partner or Instagram Partner. I'm going to help the Midrub's users to become a Facebook Marketing Partner in the following months. For this you need official business.</p>
+                                    <p>Non officially you can use the library <a href="https://github.com/mgp25/Instagram-API" target="_blank">https://github.com/mgp25/Instagram-API</a> but you have to install it yourself.</p>
+                                    <ol>
+                                        <li>The private Instagram library now have a different license and i can't distribute it. If you still want to use Instagram, follow this video <a href="https://youtu.be/q8i7A9DEavs" target="_blank">https://youtu.be/q8i7A9DEavs</a>. If you have installed Midrub, just download it, install the library and upload back. If you just downloaded it from CodeCanyon, unzip, install the library and upload on your server.</li>
+                                        <li>To download/install the Instagram Library, install before this software <a href="https://getcomposer.org/download/">https://getcomposer.org/download/</a></li>
+                                        <li>Then Enable it from <strong>Networks &gt; Instagram</strong>.</li>
+                                    </ol>
+                                    <p>If you have problems with Instagram Checkpoints you can follow these guides:</p>
+                                    <ul>
+                                        <li><a href="https://www.gramto.com/article/how-to-bypass-instagram-checkpoint/" target="_blank">https://www.gramto.com/article/how-to-bypass-instagram-checkpoint/</a></li>
+                                        <li><a href="https://instazood.com/how-to-fix-checkpoint-required-error-on-instagram/" target="_blank">https://instazood.com/how-to-fix-checkpoint-required-error-on-instagram/</a></li>
+                                        <li><a href="https://www.instapost.social/article/how-to-bypass-instagram-checkpoint/" target="_blank">https://www.instapost.social/article/how-to-bypass-instagram-checkpoint/</a></li>
+                                    </ul>
+                                    <p>If you have clients really interested in Instagram, the library author can provide you a stable solution for a monthly subscription.</p>
+                                    <p>This library allows to publish posts with photos. If you have a server and want to publish videos, please contact me by email.</p>
+                                </article> 
+                                <article id="configuration-instagram-api">
+                                    <h2>How to configure Instagram Api</h2>
+                                    <p>The option Instagram Api allows to publish photos and text on Instagram by using the Buffer Api. This solution is stable and ideal for personal use. You can connect your Instagram Accounts(which must be business) and connect RSS Feeds and posts will be published without errors.</p>
+                                    <ol>
+                                        <li>Go to <a href="https://buffer.com/developers/apps/create">https://buffer.com/developers/apps/create</a></li>
+
+                                        <li>Create a new application</li>
+
+                                        <li>Add your Your Callback URL: http://yourwebsite.com/admin/callback/instagram_api</li>
+
+                                        <li>You will receive Client ID and Secret by email</li>
+
+                                        <li>Then go to Midrub -&gt; Admin Panel -&gt; Networks -&gt; Instagram Api</li>
+
+                                        <li>Enter the Client ID and Secret</li>
+
+                                        <li>Enable, after enable if you refresh, you will get an error, don't worry, because the Instagram_api's class is standalone and has it's optional table in the database. Refresh again.</li>
+
+                                        <li>Now, users can submit their Instagram accounts(username and password). Passwords will be encoded in the database.</li>
+
+                                        <li>You can approve or delete submissions. All submissions will be displayed in Midrub -&gt; Admin Panel -&gt; Networks -&gt; Instagram_api</li>
+
+                                        <li>To approve an account, you have to login in the Instagram account and connect it in your Buffer account, then with a click you will be able to approve it for user in Midrub(Better is to become the Facebook Partner, but if you can't you can use Buffer to publish).</li>
+
+                                        <li>You can connect via api even more Buffer accounts.</li>
+
+                                        <li>You can see how Instagram works via Buffer here <a href="https://youtu.be/Bz7ZWDk4ND4" target="_blank">https://youtu.be/Bz7ZWDk4ND4</a></li>
+                                    </ol>
+                                </article>
+                                <article id="configuration-instagram-insights">
+                                    <h2>How to configure Instagram Insights</h2>
+                                    <p>The option Instagram Insights is based on the official Facebook api. Instagram Insights allows to get insights and moderate the comments for not. For sure is only the start.</p>
+                                    <p>If you want to use this option, please contact me by email.</p>
+                                    <p>Correct callback for Instagram Insights is https://www.website.com/user/callback/instagram_insights(url like in your config.php)</p>
+                                </article> 
+                                <article id="configuration-instagram-stories">
+                                    <h2>How to configure Instagram Stories</h2>
+                                    <p>The option Instagram Stories is based on the same private library. Please read about above at the Instagram option.</p>
+                                    <p>Only images are supported for now.</p>
+                                </article>
+                                <article id="configuration-linkedin">
+                                    <h2>How to configure Linkedin</h2>
+                                    <p>You can use for Linkedin Companies and Linkedin same Linkedin's application.</p>
+                                    <ul>
+                                        <li>Go to <a href="https://www.linkedin.com/developer/apps" target="_blank">https://www.linkedin.com/developer/apps</a> but first login.</li>
+                                        <li>Create an application.</li>
+                                        <li>Correct callback for Linkedin is https://www.website.com/user/callback/linkedin(url like in your config.php)</li>
+                                        <li>Copy the Client ID and Client secret key and paste in Midrub -> Admin -> User -> Networks -> Linkedin</li>
+                                    </ul>
+                                    <br>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SwByVx7o_EY" frameborder="0" allowfullscreen></iframe>
+                                    </br>   
+                                </article>
+                                <article id="configuration-linkedin-companies">
+                                    <h2>How to configure Linkedin</h2>
+                                    <p>You can use for Linkedin Companies and Linkedin same Linkedin's application.</p>
+                                    <ul>
+                                        <li>Correct callback/redirect url for Linkedin Companies is https://www.website.com/user/callback/linkedin_companies(url like in your config.php)</li>
+                                        <li>Copy the Client ID and Client secret key and paste in Midrub -> Admin -> User -> Networks -> Linkedin Companies</li>
+                                    </ul>
+                                    <br>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SwByVx7o_EY" frameborder="0" allowfullscreen></iframe>
+                                    </br>   
+                                </article>
+                                <article id="configuration-linkedin-pages">
+                                    <h2>How to configure Linkedin Pages</h2>
+                                    <p>This way is based on the Buffer Api and is a good option for personal use. This option should be configured in the same way like Instagram Api option.</p>
+                                    <p>Callback URL: http://yourwebsite.com/admin/callback/linkedin_pages</p>
+                                </article>                                
+                                <article id="configuration-medium">
+                                    <h2>How to configure Medium</h2>
+                                    <p>Medium is easy to configure, but it has restriction on publish. I don't know exactly the interval, but if you publish often than 1 post 10 minutes your posts will be saved as draft on Medium.</p>
+                                    <ul>
+                                        <li>Go to <a href="https://medium.com/me/applications" target="_blank">https://medium.com/me/applications</a> but first login.</li>
+                                        <li>Create an application.</li>
+                                        <li>Correct callback for Medium is https://www.website.com/user/callback/medium(url like in your config.php)</li>
+                                        <li>Copy the Client ID and Client secret key and paste in Midrub -> Admin -> User -> Networks -> Medium</li>
+                                    </ul>
+                                    <br>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/uveItKnITck" frameborder="0" allowfullscreen></iframe>
+                                    </br>   
+                                </article>
+                                <article id="configuration-ok">
+                                    <h2>How to configure Odnoklassniki</h2>
+                                    <p>Midrub allows to publish on the Odnoklassniki's groups and copany pages. The option is available only by request. Please contact me by email.</p> 
+                                </article>
+                                <article id="configuration-pinterest">
+                                    <h2>How to configure Pinterest</h2>
+                                    <p>The option Pinterest uses official Pinterest's api which can be used by you or your team. Pinterest requires to review applications. If you have a company you can ask for review. If no, you can enable the option from admin to allow to each user to use their Pinterest's applicatios or you can use the alternative ways to publish on Pinterest(which are available in Midrub). </p>
+                                    <p>I'm going to add Pinterest ads support in the Midrub's ADS Marketing and will be easy to get their permissions.</p>
+                                    <ul>
+                                        <li>Go to <a href="https://developers.pinterest.com/apps/" target="_blank">https://developers.pinterest.com/apps/</a> but first login.</li>
+                                        <li>Create an application.</li>
+                                        <li>Correct callback for Pinterest is https://www.website.com/user/callback/pinterest(url like in your config.php)</li>
+                                        <li>Copy the App ID and App Secret and paste in Midrub -> Admin -> User -> Networks -> Pinterest</li>
+                                        <li>You can connect only boards, not accounts.</li>
+                                    </ul>
+                                    <br>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Fd-zLz7aRoY" frameborder="0" allowfullscreen></iframe>
+                                    </br>
+                                    <p>If you have more accounts and don't want to ask for review, add all accounts in your application -> Collaborators</p>
+                                </article>  
+                                <article id="configuration-pinterest-boards">
+                                    <h2>How to configure Pinterest Boards</h2>
+                                    <p>The option Pinterest Boards allows to publish text, links and photos on Pinterest Boards. The option Pinterest Boards is based on the library SNAP API(https://www.nextscripts.com/).</p>
+                                    <p>If you have the library, please contact me by email.</p>
+                                </article>
+                                <article id="configuration-pinterest-bot">
+                                    <h2>How to configure Pinterest Bot</h2>
+                                    <p>The option Pinterest Bot allows to publish text, links and photos on Pinterest Boards. This options works via email and password and is not officially. At this moment it don't has a proxy, if you will have problems i can add support.</p>
+                                    <p>The option Pinterest Bot is based on <a href="https://github.com/seregazhuk/php-pinterest-bot">https://github.com/seregazhuk/php-pinterest-bot</a></p>
+                                </article>                                
+                                <article id="configuration-reddit">
+                                    <h2>How to configure Reddit</h2>
+                                    <p>Reddit has more restrictions for their api. You can't publish in any subreddit you want. You can't publish same url twice or if was published already by another user. You can't publish one post often than 10 minutes.</p>
+                                    <p>The option Reddit requires an url, you can't publish photos.</p>
+                                    <ol>
+                                        <li>Go to&nbsp;<a href="https://www.reddit.com/prefs/apps" rel="nofollow" target="_blank">https://www.reddit.com/prefs/apps</a>&nbsp;and click on the button <strong>create another app...</strong>. Create your app. Copy the <strong>client_id</strong> and copy <strong>client_secret</strong>.</li>
+                                        <li>Correct callback for Reddit is https://www.website.com/user/callback/reddit(url like in your config.php)</li>
+                                        <li>Then, add your Client ID and Client Secret in Midrub -> Admin -> User -> Networks -> Reddit.</li>
+                                    </ol>
+                                    <br>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WVLGFiUKxN0" frameborder="0" allowfullscreen></iframe>
+                                    </br>
+                                </article> 
+                                <article id="configuration-telegram-channels">
+                                    <h2>How to configure Telegram Channels and Groups</h2>
+                                    <p>Midrub allows to publish photos and posts on Telegram Channels and Telegram Groups. You can easily connect all your Telegram Channels and Telegram Groups.</p>
+                                    <p>You don’t need to configure Telegram Channels or Telegram Groups from admin. Just enable them. Each user have to create a Telegram application and a Telegram bot. Same Telegram bot and api can be used both Telegram Channels and Telegram Groups.</p>
+                                    <p>For more details and videos about Telegram Channels and Groups please contact me by email.</p>
+                                </article> 
+                                <article id="configuration-tumblr">
+                                    <h2>How to configure Tumblr</h2>
+                                    <p>The option Tumblr allows to publish photos, links and text on Tumblr's blogs. Is easy to configure.</p>
+                                    <ol>
+                                        <li>Go to <a href="https://www.tumblr.com/oauth/apps" target="_blank">https://www.tumblr.com/oauth/apps</a> but first login.</li>
+                                        <li>Click on the button <strong>Create application</strong>.</li>
+                                        <li>Correct callback for Reddit is https://www.website.com/user/callback/tumblr(url like in your config.php)</li>
+                                        <li>Then, add your OAuth consumer key and OAuth consumer secret in Midrub -> Admin -> User -> Networks -> Tumblr.</li>
+                                    </ol>                                    
+                                </article>
+                                <article id="configuration-vimeo">
+                                    <h2>How to configure Vimeo</h2>
+                                    <ul>
+                                        <li>Go to <a href="https://developer.vimeo.com/apps" target="_blank">https://developer.vimeo.com/apps</a> but first login.</li>
+                                        <li>Create an application.</li>
+                                        <li>Correct callback for Vimeo is https://www.website.com/user/callback/vimeo(url like in your config.php)</li>
+                                        <li>Copy the Client ID and Client secret and paste in Midrub -> Admin -> User -> Networks -> Vimeo</li>
+                                        <li>Vimeo has changed recently their api, and in a week i will create even video tutorials about how to configure it.</li>
+                                    </ul>
+                                </article>
+                                <article id="configuration-vk">
+                                    <h2>How to configure Vk</h2>
+                                    <ul>
+                                        <li>Go to <a href="https://vk.com/apps?act=manage" target="_blank">https://vk.com/apps?act=manage</a> but first login.</li>
+                                        <li>Create an application(Platform must be Standalone Application).</li>
+                                        <li>In the Vk a callback is not required.</li>
+                                    </ul>
+                                </article> 
+                                <article id="configuration-wordpress">
+                                    <h2>How to configure Wordpress</h2>
+                                    <ul>
+                                        <li>Go to <a href="https://developer.wordpress.com/apps/" target="_blank">https://developer.wordpress.com/apps/</a> but first login.</li>
+                                        <li>Create an application.</li>
+                                        <li>Correct callback for Wordpress is https://www.website.com/user/callback/wordpress(url like in your config.php)</li>
+                                        <li>Then, add your Client ID and Client Secret in Midrub -> Admin -> User -> Networks -> Wordpress.</li>
+                                    </ul>
+                                    <br>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3jBe_UHf0zw" frameborder="0" allowfullscreen></iframe>
+                                    <br>
+                                </article> 
+                                <article id="configuration-wordpress-platform">
+                                    <h2>How to configure Wordpress Platform</h2>
+                                    <p>Midrub allows to publish in any website created in Wordpress. For this you need the Wordpress's plugin. If you want it, please contact me by email.</p>
+                                </article>  
+                                <article id="configuration-xing">
+                                    <h2>How to configure Xing</h2>
+                                    <p>The option Xing allows to publish text and links on Xing. The option Xing is based on the library SNAP API(https://www.nextscripts.com/).</p>
+                                    <p>If you have the library, please contact me by email.</p>
+                                </article>
+                                <article id="posts-introduction">
+                                    <h2>Posts Introduction</h2>
+                                    <p>The posts section is an application which you can find in application/apps/collection. The Posts app has 4 tabs but in max 2 weeks will be added another one, RSS.This tabs can be enabled or disabled from admin.</p>
+                                    <p>The Posts app has options in for admin in Admin -> Apps -> Posts and for user in Settings but soon each app will have a tab with its settings added automatically. </p>
+                                    <p>The Posts app has two widgets which are displayed in the user dashboard. In the following updates you will be able to enable or disable widgets.</p>
+                                </article>
+                                <article id="posts-composer">
+                                    <h2>Composer Tab</h2>
+                                    <p>The Composer Tab has 3 sections:</p>
+                                    <ul>
+                                        <li>
+                                            <strong>Accounts List/Groups List</strong> - are displayed all accounts or groups and user can search/select accounts/groups. In the same are user will see the accounts manager button. By clicking on the button user will be able to manage accounts and groups.
+                                            You can read more about the accounts manager here <a href="http://blog.midrub.com/midrub-social-accounts-manager/" target="_blank">http://blog.midrub.com/midrub-social-accounts-manager/</a>
+                                        </li>
+                                        <li>
+                                            <strong>Posts Composer</strong> - contains the post composer and multimedia gallery. In section are displayed the buttons to display title, upload new files and the popup with last posts scheduled/published/drafted.
+                                        </li>
+                                        <li>
+                                            <strong>Preview</strong> - contains the post preview where are displayed the post content and selected accounts or groups. From there user can unselect selected accounts.
+                                        </li>
+                                    </ul>
+                                </article> 
+                                <article id="posts-scheduled">
+                                    <h2>Scheduled Tab</h2>
+                                    <p>The scheduled tab has a planner where are displayed all your published/scheduled posts. The planner displays the posts with an image cover or video cover if has. If has more images will be displayed only one. User can see even up to 7 social networks icons where will be published or was published a post.</p>
+                                    <p>In the planer you can click on the next date fields and quick schedule posts. The quick scheduler is more limited and don't allows to select categories, upload files or connect new accounts/groups.</p>
+                                </article>
+                                <article id="posts-insights">
+                                    <h2>Insights Tab</h2>
+                                    <p>The Insights tab displays insights for published posts and you can moderate comments. Insights tab displays even insights for connected accounts.</p>
+                                    <p>At this moments Insights are supported by default for:</p>
+                                    <ul>
+                                        <li>Facebook Pages</li>
+                                        <li>Facebook Groups</li>
+                                        <li>Instagram Business Accounts</li>
+                                        <li>Linkedin Companies</li>
+                                    </ul>
+                                    <p>Above were listed the default insights classes. You can custom these standalone classes which are in application/apps/collection/posts/insights</p>
+                                    <p>After 12 november will be available Insights for Youtube, Twitter and Google Plus. But these classes will be available by request.</p>
+                                </article>
+                                <article id="posts-history">
+                                    <h2>History Tab</h2>
+                                    <p>The History tab display all published, scheduled or drafted posts. For each post you can see where was published. If were errors on publishing, time when was published and post's content. From the History tab is possible to delete the posts.</p>
+                                </article> 
+                                <article id="inbox-introduction">
+                                    <h2>Inbox Introduction</h2>
+                                    <p>
+                                        The Inbox's app was created more for automatizations. This app has a bot in each network and will reply to comments, delete non wanted comments, reply to chat messages, reply to review, reply to emails, etc. 
+                                    </p>
+                                    <p>
+                                        The app is stable and you can be sure it will help your potential/existing clients to get instantly replies to their questions. 
+                                    </p>
+                                    <p>
+                                        You can add easy any network you want without lost the data after Midrub's update. I will not change the actual core.  
+                                    </p>
+                                    <p>
+                                        The Inbox's app is provided like a gift by request and instructions for configuration too. You need to request one permission to make it work.
+                                    </p>
+                                </article>
+                                <article id="inbox-facebook-pages">
+                                    <h2>Facebook Pages</h2>
+                                    <p>
+                                        I don't know if you will prefer this app for Facebook Pages Inbox instead the new Midrub's Stream, but at least you can create quick replies for each page and the bot will reply to questions in the Facebook Page's chat. Another feature is private messages. You can create a list with private messages which will be sent to people which comment your Facebook Page's posts.
+                                    </p>
+                                    <p>
+                                        At this moment the Inbox app supports exact phrases and keywords. Exact phrases means if someone ask exact what you've written in a bot's message, the bot will reply. I think you will prefer the keywords where each keyword should be in a message. Reply is only plan text.
+                                    </p>
+                                    <p>
+                                        Analytics tab allows to see by time who contacted you and what bot replied. 
+                                    </p>
+                                </article>
+                                <article id="inbox-new-network">
+                                    <h2>How to add a new network</h2>
+                                    <p>
+                                        I will explain how i will add Twitter, but in the same way you can add any network you want. Please follow exactly my instructions.
+                                    </p>
+                                    <p>
+                                        First in assets/apps/inbox/networks i will create a new folder <strong>twitter</strong>. Inside i will create two folders: <strong>js</strong> and <strong>styles</strong>. In the folder <strong>js</strong> i will create the file <strong>main.js</strong> where i will add all js code for Twitter. My ajax calls will have the url <strong>url + 'user/app-ajax/inbox'</strong> and parameters <strong>action</strong>(name of the php's method) and <strong>network</strong> will be twitter to say where is located the wanted php method.
+                                        In the folder <strong>styles</strong> i will create the folder <strong>styles</strong> and inside the file <strong>styles.css</strong> with network's styles. 
+                                    </p>
+                                    <p>
+                                        Then inside the folder application/apps/collection/inbox/networks i will create another folder called <strong>twitter</strong>. After, in the folder <strong>twitter</strong> i will create files:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <strong>main.php</strong> - is the first called class when a network is loaded. You have to follow the interface MidrubApps\Collection\Inbox\Interfaces\Networks The method network_info should return an array with keys(please look in my Facebook Pages example). 
+                                        </li>
+                                        <li>
+                                            <strong>ajax.php</strong> - is the file called by ajax. You have to add there all your methods.  
+                                        </li>       
+                                        <li>
+                                            <strong>bot.php</strong> - is the file called by social networks. There you have to write all bot's commands.  
+                                        </li>
+                                        <li>
+                                            <strong>footer.php</strong> - is the file which will contain all your modals. You can see two modals in the Facebook Pages like example.  
+                                        </li>                                        
+                                    </ul>
+                                    <p>
+                                        The bot's url will be https://www.midrub.com/social/user/bots/inbox?action=load_bots&bot=twitter
+                                    </p>
+                                    <p>
+                                        To connect accounts in the Inbox's app, the autopost's class should have the type "inbox".
+                                    </p>
+                                </article>
+                                <article id="storage-introduction">
+                                    <h2>Storage App</h2>
+                                    <p>The default Storage app was created to allow you to manage more easy your upload media files. Also, this app was created to allow photo edition and files categorization(Soon your will se how categories can be used).</p>
+                                    <p>At this time the app is basic, but will improved soon with new features.</p>
+                                </article>
+                                <article id="payments-paypal">
+                                    <h2>How to configure PayPal</h2>
+                                    <p>PayPal can be used for both recurring payments and monthly manual payments.</p>
+                                    <p>Go to <a href="https://www.paypal.com/cgi-bin/customerprofileweb?cmd=_profile-website-payments" target="_blank">https://www.paypal.com/cgi-bin/customerprofileweb?cmd=_profile-website-payments</a>.</p>
+                                    <p>You need a Business PayPal account, but don’t worry, you don’t need to pay nothing. For each transaction PayPal will take 0.50$. If you have already a Business PayPal account, sign in and click on the Profile -> Profile and settings -> My selling tools -> Website preferences(Update) -> Copy the PayPal Identity Token and add in Midrub.</p>
+                                    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/cHndPtzwNxc" frameborder="0" allowfullscreen=""></iframe></p>
+                                    <p>Why you need PayPal Identity Token in Midrub? Someone can redirect manually a link to your website and upgrade the plan without paying. But with PayPal Identity Token we can verify the redirected token if is valid, already exists in your database or the payment value is exact for the choosen plan.</p>
+                                    <p>For recurring payments please contact me by email and i will provide more instructions.</p>
+                                </article> 
+                                <article id="payments-2checkout">
+                                    <h2>How to configure 2Checkout</h2>
+                                    <p>2Checkout can be used for monthly manual payments.</p>
+                                    <p>2Checkout is available in almost any country and people can pay by using their credit card.</p>
+                                    <p>If you want to use 2Checkout, you need first to create a Merchant Account:</p>
+                                    <p><a href="https://www.2checkout.com/ecommerce-glossary/merchant-account">https://www.2checkout.com/ecommerce-glossary/merchant-account</a></p>
+                                    <p>After this, sign in and in Account -&gt; Site Management&nbsp;add for&nbsp;Approved URL this:</p>
+                                    <p>http://yourdomain.com/user/success-payment</p>
+                                    <p>Copy account number and secret word and add in Admin -&gt; Settings -&gt; Payments. Please watch the video below for more details:</p>
+                                    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/76rF3qu2Re4" frameborder="0" allowfullscreen=""></iframe></p>
+                                    <p>Don't use a Sandbox account for 2Checkout in Midrub because is not supported.</p>
+                                </article>  
+                                <article id="payments-stripe">
+                                    <h2>How to configure Stripe</h2>
+                                    <p>Stripe can be used for monthly manual payments.</p>
+                                    <ol>
+                                        <li>Go to&nbsp;<a href="https://stripe.com/">https://stripe.com/</a></li>
+                                        <li>Sign In and go to&nbsp;<a href="https://dashboard.stripe.com/account/apikeys">https://dashboard.stripe.com/account/apikeys</a></li>
+                                        <li>Copy Live Secret Key.</li>
+                                        <li>Go to Midrub.</li>
+                                        <li>Sign In as Admin, click on Settings-&gt;Payments.</li>
+                                        <li>And paste the copied Live Secret Key in the field&nbsp;Stripe Secret Key(Press SPACE and BACKSPACE if will not be saved)</li>
+                                    </ol>
+                                </article> 
+                                <article id="payments-new-payment">
+                                    <h2>How to add a new payment gateway</h2>
+                                    <p>The payment gateways in Midrub are standalone files. You can add a new payment gateways by adding a class in application/payments(you have to follow the interface application/interfaces/Payments.php).</p>
+                                    <p>How to create a new payment class:</p>
+                                    <ul>
+                                        <li><u>process</u> - is the method which process the request sent after user click on the button <strong>Pay Now</strong></li>
+                                        <li><u>save</u> - is the method which process the response when user is redirected to http://yourdomain.com/user/success-payment</li>
+                                        <li><u>info</u> - contains the class's info</li>
+                                        <li><u>cancel</u> - if user has a subscription and changes the plan, we should delete the existing subscription first. So add the code in the method.</li>
+                                    </ul>
+                                </article>
+                                <article id="api-introduction">
+                                    <h2>Midrub's Api</h2>
+                                    <p>From the version 0.0.7.7 Midrub has it's api. For each Midrub's app you can create custom endpoints and read, modify or create new content in Midrub from any device or website.</p>
+                                    <p>The api is based on Oauth 2 and users can generate tokens based on permissions and use the tokens to access the api's endpoints. Tokens can be generated by redirect/login or via username and password from a mobile app.</p>
+                                    <p>All apps can be manager from the Admin panel and you can decide which permissions will have each api's application. In the near future users will be able to ask for permissions and manage their applications from their accounts.</p>
+                                    <p>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dh52xjCcP9E" frameborder="0"></iframe>
+                                    </p>
+                                    <p>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/GTLvY0HYYmg" frameborder="0"></iframe>
+                                    </p>
+                                    <p>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/WwWsWBk7GpI" frameborder="0"></iframe>
+                                    </p>
+                                </article>                               
+                                <article id="miscellaneous-dropbox">
+                                    <h2>How to configure Dropbox</h2>
+                                    <ul>
+                                        <li>
+                                            Dropbox can be enabled from Admin -> Apps -> Posts -> Multimedia -> Enable the DropBox multimedia picker
+                                        </li>
+                                        <li>
+                                            You need even the DropBox App Key. 
+                                        </li>
+                                        <li>Go here <a href="https://www.dropbox.com/developers/apps" target="_blank">https://www.dropbox.com/developers/apps</a></li>
+                                        <li>Create a new application</li>
+                                        <li>In the field Chooser/Saver please add your domain.</li>
+                                    </ul>
+                                </article> 
+                                <article id="miscellaneous-pixabay">
+                                    <h2>How to configure PixaBay</h2>
+                                    <ul>
+                                        <li>
+                                            PixaBay can be enabled from Admin -> Apps -> Posts -> Multimedia -> Enable PixaBay
+                                        </li>
+                                        <li>
+                                            You need even the Pixabay API key
+                                        </li>
+                                        <li>Go here <a href="https://pixabay.com/en/service/about/api/" target="_blank">https://pixabay.com/en/service/about/api/</a></li>
+                                        <li>Signup and you will see here https://pixabay.com/api/docs/ the API key</li>
+                                    </ul>
+                                </article>  
+                                <article id="miscellaneous-social-login">
+                                    <h2>How to add a new social login option</h2>
+                                    <p>At the moment there are two social networks through which you could login/sign up. But you can add more social networks for login/sign up. </p>
+                                    <p>To add a new social network for, it’s necessary to add a new class in <strong>application/login/</strong> folder, which must have <strong>Login</strong> interface from <strong>application/interfaces/</strong> folder. </p>
+                                    <p>The callback url for login for al social networks is https://www.yourwebsite.com/callback/nameofnetwork</p>
+                                </article>                                
+                                <article id="miscellaneous-midrub-shortener">
+                                    <h2>How to configure Midrub Shortener</h2>
+                                    <p>By default Midrub Shortener is enabled. You can enable Google Shortener from Admin -> Settings and Midrub Shortener will be disabled. </p>
+                                </article>  
+                                <article id="miscellaneous-google-shortener">
+                                    <h2>How to configure Google Shortener</h2>
+                                    <p>If you have already created a Google Application for Blogger or Youtube you can use it for Google Shortener too. </p>
+                                    <p>Just enable the library URL Shortener API in your Google Console.</p>
+                                    <p>After open the file application/config/config.php and add your Api Key and domain in $config['google_api_key'] = ''; $config['domain'] = '';</p>
+                                </article>
+                                <article id="miscellaneous-security">
+                                    <p>Description of the security methods to prevent attacks such as: SQL injection, XSS, Hijacking sessions and others.</p>
+
+                                    <h4>Security Monitoring System</h4>
+
+                                    <p>Midrub has a security monitoring system which verifies every minute(depends on how often runs your cron job) and if detects non Midrub's php files, deletes them and sends you a notification via email.</p>
+
+                                    
+                                    <h4>SQL injection</h4>
+
+                                    <p>We have used only query bidings and as you can read here <a href="https://www.codeigniter.com/userguide3/database/queries.html" target="_blank">https://www.codeigniter.com/userguide3/database/queries.html</a>, the values are automatically escaped, producing safer queries.</p>
+
+                                    <h4>XSS Filtering</h4>
+
+                                    <p>We have enabled XSS protection by added $config['global_xss_filtering'] = TRUE; in the application/config/config.php file.</p>
+                                    <p>You can read more here <a href="https://www.codeigniter.com/user_guide/libraries/security.html" target="_blank">https://www.codeigniter.com/user_guide/libraries/security.html</a></p>     
+
+                                    <h4>CSRF Filtering</h4>
+
+                                    <p>We have enabled CSRF protection by added $config['csrf_protection'] = TRUE; in the application/config/config.php file. Also, we have used the form helper for each forms.</p>
+                                    <p>You can read more here <a href="https://www.codeigniter.com/user_guide/libraries/security.html" target="_blank">https://www.codeigniter.com/user_guide/libraries/security.html</a></p> 
+
+                                    <h4>Session hijacking</h4>
+
+                                    <p>We added $config['sess_use_database'] = TRUE; in the application/config/config.php file and all sessions are saved in the database.</p>
+
+                                    <h4>Why there is NO captcha for login and sign up forms? </h4>
+
+                                    <p>Because after 5 failed attempts to login, the user is blocked for one hour. Once registered/signed up, the ip address is stored and the user will not be able to register/sign up again for 24 hours. Also you can choose, that it will not be possible to register/sign up ever, from the same ip address. This way, we simplified the login and sign up steps, without being necessary to complete other fields. </p>
+
+                                    <p>All uploaded images and videos in the user panel will have only the read permissions. Midrub allows to run only it's files which are included in the htaccess. The htaccess from the folder assets will prevent the execution of php files in all subfolders.  </p>
+                                    
+                                    <p>For vulnerable folders i've disabled via Htaccess the php files execution but this solution won't work o Nginx.</p>
+                                    
+                                    <p>Please, remember, i'm only a web developer and any big/middle companies have security engineers which only ensure the security for the company's projects. If you have ideas how to improve the security for Midrub, please let me know, i will check to add them.</p>
+                                </article>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!-- Load the main Documentation javascript file -->
+    <script src="assets/js/main.js"></script> 
+</body>
+</html>
